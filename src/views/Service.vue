@@ -44,8 +44,6 @@
             margin-left:-15px;
         }
     }
-    height: 100vh;
-    width: 100vw;
     .container{
         margin-top:80px;
         h2{
@@ -141,6 +139,12 @@ export default {
                 break;
         }
         document.title = "Visualkraken - " + this.titre
+        document.querySelector("nav").style.display = "none"
+        document.querySelector("footer").style.display = "none"
+    },
+    beforeDestroy(){
+         document.querySelector("nav").style.display = "flex"
+        document.querySelector("footer").style.display = "block"
     }
 }
 </script>
