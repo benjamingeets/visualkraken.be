@@ -117,6 +117,14 @@ export default {
     }
 }
 
+@media (max-width:1024px){
+    .button-false{
+        p{
+            font-size: 0.8em;
+        }
+    }
+}
+
 input[type="submit"]{
     width: 100%;
     height: 100%;

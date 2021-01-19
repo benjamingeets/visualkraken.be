@@ -1,18 +1,28 @@
 <template>
   <div id="app">
-    
-        <router-view></router-view>
-    
+          <NavBar/>
+        <div class="container">
+          <router-view></router-view>
+        </div>
+        <Footer/>
   </div>
 </template>
 
 <script>
+import NavBar from '@/components/NavBar'
+import Footer from '@/components/Footer'
+
 export default {
-  name:"app"
+  name:"app",
+  components:{
+    NavBar,Footer
+  }
 }
 </script>
 
 <style lang="scss">
+
+
 $bleu : #2463AA;
 $transition : 0.3s ease-in-out;
 $gris : #7A7A7A;
@@ -30,6 +40,7 @@ $gris : #7A7A7A;
   color:black;
   transition: $transition;
 }
+
 .container{
   width: 80%;
   margin:auto;

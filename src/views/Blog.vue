@@ -1,7 +1,5 @@
 <template>
     <div>
-        <div class="container">
-            <NavBar/>
             <h2 class="text-center">Blog</h2>
             <div class="articles_container">
                 <div v-for='article in articles' :key="article" class="article" @click="goTop()">
@@ -14,8 +12,6 @@
                     </router-link>
                 </div>
             </div>
-      </div>
-      <Footer/>
     </div>
 </template>
 
@@ -58,8 +54,6 @@
 </style>
 
 <script>
-import NavBar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer'
 
 export default {
     name:"Blog",
@@ -70,7 +64,6 @@ export default {
         }
     },
     components:{
-        NavBar,Footer
     },
     methods:{
         goTop(){

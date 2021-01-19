@@ -146,8 +146,13 @@ footer{
             align-items: center;
             a{
                 margin:0 10px;
+                text-align: center;
+                svg{
+                    width: 50%;
+                }
                 &:hover{
                     svg{
+                        
                         path{
                             fill:$grisClair;
                         }
@@ -159,8 +164,10 @@ footer{
 }
 
 @media (max-width:1024px){
-    svg{
-        height: auto;
+    footer{
+        svg{
+        height: 40px;
+    }
     }
 }
 @media (max-width:480px){

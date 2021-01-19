@@ -1,7 +1,5 @@
 <template>
     <div>
-        <div class="container">
-            <NavBar/>
             <div class="blog-post">
                 <h2>{{titre}}</h2>
                 <div class="texte">
@@ -40,8 +38,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <Footer/>
+      
     </div>
 </template>
 
@@ -108,8 +105,6 @@
 </style>
 
 <script>
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
 export default {
     name:"Contact",
     data(){
@@ -120,7 +115,6 @@ export default {
         }
     },
     components:{
-        NavBar,Footer
     },
     methods:{
         goTop(){

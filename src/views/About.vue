@@ -1,7 +1,6 @@
 <template>
     <div>
-        <div class="container">
-            <NavBar/>
+
             <h2 class="text-center">A propos</h2>
             <div class="about">
                 <h3>
@@ -14,8 +13,6 @@
                 <p>De part la varité de compétences qui la compose, notre équipe est très versatible et à la fois complémentaire. Tristan, designer, va concevoir vos projets et passera la main à Benjamin qui leur fera prendre vie. </p>
                 <Equipe/>
             </div>
-        </div>
-        <Footer/>
     </div>
 </template>
 
@@ -44,13 +41,11 @@
 </style>
 
 <script>
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
 import Equipe from '@/components/index/Equipe'
 export default {
     name:"About",
     components:{
-        NavBar,Footer,Equipe
+        Equipe
     },
     mounted(){
       document.title="VisualKraken - A propos"
