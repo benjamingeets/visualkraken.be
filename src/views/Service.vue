@@ -7,7 +7,7 @@
                 </svg>
             </router-link>
         </div>
-        <div class="container">
+        <div>
             <h2 class="text-center">
                 {{titre}}
             </h2>
@@ -44,8 +44,6 @@
             margin-left:-15px;
         }
     }
-    .container{
-        margin-top:80px;
         h2{
             margin-top:30px;
         }
@@ -68,7 +66,7 @@
                 }
             }
         }
-    }
+    
     
 }
 
