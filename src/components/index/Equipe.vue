@@ -161,6 +161,7 @@ $bleu : #2463AA;
             .card{
                 justify-content: space-between;
                 padding:25px;
+                width: 35%;
                 h3{
                     font-size:2em;
                 }

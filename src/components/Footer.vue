@@ -194,6 +194,21 @@ footer{
                 display: none;
             }
         }
+        .bottom{
+            .copyright{
+                font-size:0.8em;
+                width: 50%;
+          }
+          .social{
+              a{
+                  width: 10%;
+              }
+          }
+          .rgpd{
+              font-size:0.8em;
+                width: 50%;
+          }
+        }
     }
 }
 </style>
