@@ -64,6 +64,12 @@
                 .button{
                     margin:50px auto 0px auto;
                 }
+                h3{
+                    font-size:2em;
+                }
+                p{
+                    font-size:1.5em;
+                }
             }
         }
     
@@ -72,7 +78,6 @@
 
 @media (max-width:1024px) {
     .service{
-        .container{
             .panel{
                 flex-direction: column;
                 .image{
@@ -92,7 +97,7 @@
                     }
                 }
             }
-        }
+        
     }
 }
 </style>
