@@ -6,12 +6,12 @@
                 <h3>
                 VisualKraken
                 </h3>
-                <p>VisualKraken, c’est l’union de 2 jeunes étudiants avec un objectif clair: accompagner des TPE dans leur croissance à travers les nouveaux médias. Notre jeunesse et nos connaissances font de nous de véritables couteaux suisse numérique, à l’aise dans le web, les réseaux sociaux et la création graphique.</p>
+                <p>VisualKraken, c’est l’union de 2 jeunes étudiants avec un objectif clair: accompagner les petits entreprises et indépendants dans leur croissance à travers les nouveaux médias. Notre jeunesse et nos connaissances font de nous de véritables couteaux suisse numérique, à l’aise dans le web, les réseaux sociaux et la création graphique.</p>
                 <div class="image">
                     <img src="https://via.placeholder.com/753x502" alt="">
                 </div>
                 <p>De part la varité de compétences qui la compose, notre équipe est très versatible et à la fois complémentaire. Tristan, designer, va concevoir vos projets et passera la main à Benjamin qui leur fera prendre vie. </p>
-                <Equipe/>
+        
             </div>
     </div>
 </template>
@@ -41,11 +41,9 @@
 </style>
 
 <script>
-import Equipe from '@/components/index/Equipe'
 export default {
     name:"About",
     components:{
-        Equipe
     },
     mounted(){
       document.title="VisualKraken - A propos"
