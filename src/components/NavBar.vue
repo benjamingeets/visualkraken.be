@@ -44,7 +44,7 @@ $transition : 0.3s ease-in-out;
 }
 
 nav{
-    height: 15vh;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -111,6 +111,7 @@ nav{
 }
 @media (max-width:1024px){
     nav{
+        height: 120px ;
         .logo{
             width: 100%;
             display: flex;
@@ -125,7 +126,7 @@ nav{
             position: absolute;
             right:60px;
             top:70px;
-            width: 60px;
+            width: 40px;
             
             cursor: pointer;
             img{
@@ -149,7 +150,7 @@ nav{
             }
             .close{
                 position: absolute;
-                width: 60px;
+                width: 40px;
                 top:70px;
                 right: 60px;
                 img{
@@ -173,14 +174,15 @@ nav{
 }
 @media (max-width:480px){
     nav{
+        height: 100px;
         .hamburger{
-            width: 30px;
+            width: 20px;
             top: 40px;
             right:40px;
         }
         .hamburger-menu{
             .close{
-                width: 30px;
+                width: 20px;
             top: 40px;
             right:40px;
             }

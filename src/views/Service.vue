@@ -39,14 +39,19 @@
     padding-top:50px;
     .retour{
         position: absolute;
-        left:30px;
-        top:50px;
+        width: 30px;
+        top:80px;
+        transition: 1s ease;
+        svg{
+            width: 100%;
+        }
         &:hover{
             margin-left:-15px;
         }
     }
         h2{
             margin-top:30px;
+            font-size:2.5em;
         }
         .panel{
             display: flex;
@@ -79,6 +84,9 @@
 
 @media (max-width:1024px) {
     .service{
+        h2{
+            font-size:1.5em;
+        }
             .panel{
                 flex-direction: column;
                 .image{

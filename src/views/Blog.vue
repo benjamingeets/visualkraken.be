@@ -6,7 +6,7 @@
                     <router-link to="/blog/article">
                         <img src="https://via.placeholder.com/455x323" alt="">
                     <h3>
-                        UX Design
+                        UX Design c cool ou pas non je sais pas quoi lol
                     </h3>
                     <p>Tout ce qu'il faut savoir</p>
                     </router-link>
@@ -29,9 +29,11 @@
         }
         h3{
             margin: 10px 0;
+            font-size:1.2em;
         }
         p{
             margin: 0 0 30px 0;
+            font-size:0.8em;
         }
     }
 }

@@ -45,7 +45,9 @@
 <style lang="scss">
 
 nav{
-    .router-link-active[href="/blog"]{
+    ul{
+        li{
+            .router-link-active[href="/blog"]{
                     color:#2463AA;
                     &::after{
                         content: '';
@@ -57,6 +59,8 @@ nav{
                         margin-top:10px
                     }
                 }
+        }
+    }
 }
 
 .blog-post{

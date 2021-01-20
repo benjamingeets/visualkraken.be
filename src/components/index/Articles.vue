@@ -85,6 +85,7 @@ export default {
                 p{
                     font-size: 1em;
                     margin: 5px 0;
+                    margin-bottom:50px;
                 }
             }
             .articleDeux{
@@ -93,6 +94,7 @@ export default {
                 }
                 p{
                     font-size:1em;
+                    
                 }
             }  
         }
@@ -107,6 +109,7 @@ export default {
                 width: 100%;
                 p{
                     margin:0;
+                    margin-bottom:50px;
                 }
             }
             .articleDeux{
