@@ -104,6 +104,7 @@ export default {
     cursor:not-allowed;
     color:gray;
     border:2px solid gray;
+    padding:1px;
     p{
         color:gray;
         font-size:1em;

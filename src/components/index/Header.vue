@@ -33,6 +33,7 @@ $transition : 0.3s ease-in-out;
     .header{
         display: flex;
         flex-wrap: wrap;
+        min-height: 85vh;
         .text{
             width: 50%;
             display: flex;

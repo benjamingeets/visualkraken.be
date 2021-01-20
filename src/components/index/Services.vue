@@ -10,7 +10,7 @@
                 <h3 class="tablette-center">Communication</h3>
                 <p>Tout le monde utilise les réseaux sociaux, mais avoir une communication pertinente et efficace est plus complexe qu’il n’y parait. Nous sommes là pour vous accompagner dans votre démarche.</p>
                 <router-link to="/service/communication">
-                    <div class="button tablette-center" @click="goTop()">
+                    <div class="button tablette-center">
                         <p>En savoir plus</p>
                     </div>
                 </router-link>
@@ -19,13 +19,13 @@
         <!-- Dev web -->
         <div id="dev" class="service-card reverse">
             <div class="image">
-                <img src="@/assets/dev.png" alt="">
+                <img src="@/assets/dev_white.png" alt="">
             </div>
             <div class="text">
                 <h3 class="tablette-center">Développement  de site web</h3>
                 <p>Nous mettons un point d’honneur à concevoir des sites internet à la main, en accord avec vos valeurs et axés sur la légerté et la rapidité.</p>
                 <router-link to="/service/dev">
-                    <div class="button tablette-center button-white" @click="goTop()">
+                    <div class="button tablette-center button-white">
                         <p>En savoir plus</p>
                     </div>
                 </router-link>
@@ -40,7 +40,7 @@
                 <h3 class="tablette-center">Graphisme</h3>
                 <p>Nous sommes équipés des meilleurs logiciels d’édition d’image pour produire des logos, design ou encore photomontages pour votre présence digitale.</p>
                 <router-link to="/service/graphisme">
-                    <div class="button tablette-center" @click="goTop()">
+                    <div class="button tablette-center">
                         <p>En savoir plus</p>
                     </div>
                 </router-link>

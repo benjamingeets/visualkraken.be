@@ -2,7 +2,9 @@
   <div id="app">
           <NavBar/>
         <div class="container">
-          <router-view></router-view>
+          <transition name="fade" mode="out-in">
+            <router-view></router-view>
+          </transition>
         </div>
         <Footer/>
   </div>
@@ -141,5 +143,14 @@ p{
     font-size: 1em;
     
   }
+}
+
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+  transform:translateX(1em)
+}
+
+.fade-enter-active .fade-leave-active{
+  transition: all .2s ease;
 }
 </style>

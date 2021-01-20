@@ -21,7 +21,7 @@
                     <h3>{{soustitreDeux}}</h3>
                     <p>{{texteDeux}}</p>
                     <router-link to="/contact">
-                            <div class="button button-gradient">
+                            <div class="button button-gradient" @click="goTop()">
                                 <p>Nous contacter</p>
                             </div>
                         </router-link>
@@ -36,6 +36,7 @@
 <style lang="scss">
 .service{
     overflow-x: hidden;
+    padding-top:50px;
     .retour{
         position: absolute;
         left:30px;
@@ -115,6 +116,12 @@ export default {
             urlImage:"",
         }
     },
+    methods:{
+        goTop(){
+            document.querySelector("html").style.scrollBehavior = "auto"
+            window.scroll(0,-10000)
+        }
+    },
     mounted(){
         switch (this.$route.params.service) {
             case "communication" :
@@ -144,6 +151,7 @@ export default {
         document.title = "Visualkraken - " + this.titre
         document.querySelector("nav").style.display = "none"
         document.querySelector("footer").style.display = "none"
+        this.goTop()
     },
     beforeDestroy(){
          document.querySelector("nav").style.display = "flex"

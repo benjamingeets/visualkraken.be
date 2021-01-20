@@ -36,6 +36,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Service.vue')
   },
   {
+    path: '/rgpd',
+    name: 'RGPD',
+    component: () => import(/* webpackChunkName: "about" */ '../views/rgpd.vue')
+  },
+  {
     path: '*',
     name: '404',
     component: () => import(/* webpackChunkName: "about" */ '../views/404.vue')

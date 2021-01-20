@@ -13,7 +13,7 @@
                             </div>
                         </router-link>
                         <router-link to="/blog">
-                            <div class="button" @click="goTop()">
+                            <div class="button">
                                 <p>Voir tous les articles</p>
                             </div>
                         </router-link>
@@ -43,6 +43,22 @@
 </template>
 
 <style lang="scss">
+
+nav{
+    .router-link-active[href="/blog"]{
+                    color:#2463AA;
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background: #2463AA;
+                        transition: width .3s;
+                        margin-top:10px
+                    }
+                }
+}
+
 .blog-post{
     display: flex;
     flex-direction: column;
@@ -71,10 +87,10 @@
                 width: 30%;
                 h3{
                     margin:0;
-                    font-size:2em;
+                    font-size:1em;
                 }
                 p{
-                    font-size:1em;
+                    font-size:0.8em;
                 }
             }
         }

@@ -4,12 +4,12 @@
         <div>
             <div class="articleUn">
                 <img src="https://via.placeholder.com/756x536" alt="">
-                <h3>UX Design</h3>
+                <h3>UX Design c vraiment sympa le bail </h3>
                 <p>Tout ce qu'il faut savoir</p>
             </div>
             <div class="articleDeux">
                 <img src="https://via.placeholder.com/465x306" alt="">
-                <h3>Le développement</h3>
+                <h3>Le développement c vraiment bon délire han</h3>
                 <p>Tout ce qu'il faut savoir</p>
                 <router-link to="/blog">
                     <div class="button" @click="goTop()">

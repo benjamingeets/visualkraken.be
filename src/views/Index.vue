@@ -25,6 +25,9 @@ export default {
   mounted(){
     document.title= "VisualKraken - Votre site au pixel près"
     document.querySelector("html").style.scrollBehavior = "auto"
+    if(location.hash){
+      document.querySelector(location.hash).scrollIntoView()
+    }
   }
 }
 </script>
