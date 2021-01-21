@@ -45,8 +45,10 @@ export default {
     name:"About",
     components:{
     },
-    mounted(){
-      document.title="VisualKraken - A propos"
+    head(){
+        return{
+            title:"VisualKraken - A propos"
+        }
     }
 }
 </script>

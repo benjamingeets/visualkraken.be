@@ -6,11 +6,10 @@
 
 <script>
 export default {
-    name:"Contact",
-    components:{
-    },
-    mounted(){
-        document.title="contact"
+    head(){
+        return{
+            title : "VisualKraken - Page absente"
+        }
     }
 }
 </script>

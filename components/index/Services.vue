@@ -4,7 +4,7 @@
         <!-- Communication -->
         <div id="communication" class="service-card">
             <div class="image">
-                <img src="@/assets/communication.png" alt="" loading="lazy">
+                <img src="~/assets/communication.png" alt="" loading="lazy">
             </div>
             <div class="text">
                 <h3 class="tablette-center">Communication</h3>
@@ -19,7 +19,7 @@
         <!-- Dev web -->
         <div id="dev" class="service-card reverse">
             <div class="image">
-                <img src="@/assets/dev_white.png" alt="" loading="lazy">
+                <img src="~/assets/dev_white.png" alt="" loading="lazy">
             </div>
             <div class="text">
                 <h3 class="tablette-center">Développement  de site web</h3>
@@ -34,7 +34,7 @@
         <!-- Graphisme -->
         <div id="graphisme" class="service-card">
             <div class="image">
-                <img src="@/assets/graphisme.png" alt="" loading="lazy">
+                <img src="~/assets/graphisme.png" alt="" loading="lazy">
             </div>
             <div class="text">
                 <h3 class="tablette-center">Graphisme</h3>

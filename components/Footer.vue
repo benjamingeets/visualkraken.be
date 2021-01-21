@@ -10,16 +10,16 @@
         </a>
         <div class="top">
             <div class="logo">
-                <img src="@/assets/logo_white.png" alt="" loading="lazy">
+                <img src="~/assets/logo_white.png" alt="" loading="lazy">
                 <p>VisualKraken</p>
             </div>
             <div class="liste">
                 <p>Navigation</p>
                 <ul>
-                    <li @click="goTop()"><router-link to="/">Accueil</router-link></li>
-                    <li @click="goTop()"><router-link to="/blog">Blog</router-link></li>
-                    <li @click="goTop()"><router-link to="/contact">Contact</router-link></li>
-                    <li @click="goTop()"><router-link to="/a-propos">A propos</router-link></li>
+                    <li @click="goTop()"><NuxtLink to="/">Accueil</NuxtLink></li>
+                    <li @click="goTop()"><NuxtLink to="/blog">Blog</NuxtLink></li>
+                    <li @click="goTop()"><NuxtLink to="/contact">Contact</NuxtLink></li>
+                    <li @click="goTop()"><NuxtLink to="/a-propos">A propos</NuxtLink></li>
                 </ul>
             </div>
             <div class="liste" id="contact">
@@ -39,19 +39,19 @@
             </div>
             <div class="social">
                 <a href="https://facebook.com/visualkrakenbe">
-                <img src="@/assets/facebook.png" alt="" loading="lazy">
+                <img src="assets/facebook.png" alt="" loading="lazy">
                 </a>
                 <a href="https://twitter.com/Visualkrakenbe">
-                <img src="@/assets/twitter.png" alt="" loading="lazy">
+                <img src="assets/twitter.png" alt="" loading="lazy">
                 </a>
                 <a href="https://instagram.com/visualkrakenbe">
-                    <img src="@/assets/instagram.png" alt="" loading="lazy">
+                    <img src="assets/instagram.png" alt="" loading="lazy">
                 </a>
             </div>
             <div class="rgpd" @click="goTop();">
-                <router-link to="/rgpd">
+                <NuxtLink to="/rgpd">
                     RGPD
-                </router-link>
+                </NuxtLink>
             </div>
         </div>
     </footer>

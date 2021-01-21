@@ -17,8 +17,10 @@ export default {
     components:{
        ContactForm
     },
-    mounted(){
-        document.title="VisualKraken - Contact"
+    head(){
+        return{
+            title:"VisualKraken - Contact"
+        }
     }
 }
 </script>
