@@ -10,7 +10,7 @@
         </a>
         <div class="top">
             <div class="logo">
-                <img src="@/assets/logo_white.png" alt="">
+                <img src="@/assets/logo_white.png" alt="" loading="lazy">
                 <p>VisualKraken</p>
             </div>
             <div class="liste">
@@ -39,13 +39,13 @@
             </div>
             <div class="social">
                 <a href="https://facebook.com/visualkrakenbe">
-                <img src="@/assets/facebook.png" alt="">
+                <img src="@/assets/facebook.png" alt="" loading="lazy">
                 </a>
                 <a href="https://twitter.com/Visualkrakenbe">
-                <img src="@/assets/twitter.png" alt="">
+                <img src="@/assets/twitter.png" alt="" loading="lazy">
                 </a>
                 <a href="https://instagram.com/visualkrakenbe">
-                    <img src="@/assets/instagram.png" alt="">
+                    <img src="@/assets/instagram.png" alt="" loading="lazy">
                 </a>
             </div>
             <div class="rgpd" @click="goTop();">

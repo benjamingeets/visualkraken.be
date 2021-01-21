@@ -13,7 +13,7 @@
             </h2>
             <div class="panel">
                 <div class="image">
-                    <img :src='"@/assets/" + $route.params.service + ".png"' alt="">
+                    <img :src='"@/assets/" + $route.params.service + ".png"' alt="" loading="lazy">
                 </div>
                 <div class="texte">
                     <h3>{{soustitreUn}}</h3>

@@ -4,7 +4,7 @@
             <div class="articles_container">
                 <div v-for='article in articles' :key="article" class="article" @click="goTop()">
                     <router-link to="/blog/article">
-                        <img src="https://via.placeholder.com/455x323" alt="">
+                        <img src="https://via.placeholder.com/455x323" alt="" loading="lazy">
                     <h3>
                         UX Design c cool ou pas non je sais pas quoi lol
                     </h3>

@@ -21,17 +21,17 @@
                     <div class="recommandes">
                         
                         <div>
-                            <img src="https://via.placeholder.com/465x306" alt="">
+                            <img src="https://via.placeholder.com/465x306" alt="" loading="lazy">
                             <h3>UX design</h3>
                             <p>les trucs à savoir</p>
                         </div>
                         <div>
-                            <img src="https://via.placeholder.com/465x306" alt="">
+                            <img src="https://via.placeholder.com/465x306" alt="" loading="lazy">
                             <h3>UX design</h3>
                             <p>les trucs à savoir</p>
                         </div>
                         <div>
-                            <img src="https://via.placeholder.com/465x306" alt="">
+                            <img src="https://via.placeholder.com/465x306" alt="" loading="lazy">
                             <h3>UX design</h3>
                             <p>les trucs à savoir</p>
                         </div>
