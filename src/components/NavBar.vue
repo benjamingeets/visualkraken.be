@@ -44,7 +44,7 @@ $transition : 0.3s ease-in-out;
 }
 
 nav{
-    height: 150px;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     width: 80%;
