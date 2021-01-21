@@ -1,30 +1,30 @@
 <template>
     <nav>
         <div class="logo">
-            <router-link to="/">
-                <img src="@/assets/logo.png" alt="">
+            <NuxtLink to="/">
+                <img src="~/assets/logo.png" alt="">
                 <h1>VisualKraken</h1>
-            </router-link>
+            </NuxtLink>
         </div>
         <ul>
-            <li><router-link to="/">Accueil</router-link></li>
-            <li><router-link to="/blog">Blog</router-link></li>
-            <li><router-link to="/contact">Contact</router-link></li>
-            <li><router-link to="/a-propos">A propos</router-link></li>
+            <li><NuxtLink to="/">Accueil</NuxtLink></li>
+            <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+            <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+            <li><NuxtLink to="/a-propos">A propos</NuxtLink></li>
         </ul>
         <div class="hamburger" @click="hmbMenu()">
-            <img src="@/assets/hamburger.png" alt="">
+            <img src="~/assets/hamburger.png" alt="">
         </div>
         <div v-if="displayHmb" class="hamburger-menu" @click="hmbMenu()">
             <div class="close">
-                <img src="@/assets/cross.png" alt="">
+                <img src="assets/cross.png" alt="">
             </div>
-           <img src="@/assets/logo_white.png" alt="">
+           <img src="~/assets/logo_white.png" alt="">
             <h1>VisualKraken</h1>
-            <p><router-link to="/">Accueil</router-link></p>
-            <p><router-link to="/blog">Blog</router-link></p>
-            <p><router-link to="/contact">Contact</router-link></p>
-            <p><router-link to="/a-propos">A propos</router-link></p>
+            <p><NuxtLink to="/">Accueil</NuxtLink></p>
+            <p><NuxtLink to="/blog">Blog</NuxtLink></p>
+            <p><NuxtLink to="/contact">Contact</NuxtLink></p>
+            <p><NuxtLink to="/a-propos">A propos</NuxtLink></p>
         </div>
     </nav>
 </template>
@@ -44,7 +44,7 @@ $transition : 0.3s ease-in-out;
 }
 
 nav{
-    height: 150px;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -91,7 +91,7 @@ nav{
                     width: 100%;
                 }
             }
-            .router-link-exact-active{
+            .nuxt-link-exact-active{
                     color:$bleu;
                     &::after{
                         content: '';

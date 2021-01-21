@@ -1,26 +1,14 @@
 <template>
-  <div id="app">
-          <NavBar/>
-        <div class="container">
-          <transition name="fade" mode="out-in">
-            <router-view></router-view>
+  <div>
+    <NavBar/>
+    <div class="container">
+      <transition name="fade" mode="out-in">
+            <Nuxt/>
           </transition>
-        </div>
-        <Footer/>
+    </div>
+    <Footer/>
   </div>
 </template>
-
-<script>
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
-
-export default {
-  name:"app",
-  components:{
-    NavBar,Footer
-  }
-}
-</script>
 
 <style lang="scss">
 
@@ -30,7 +18,7 @@ $transition : 0.3s ease-in-out;
 $gris : #7A7A7A;
 @font-face {
   font-family: "HelveticaN";
-  src: url(./fonts/HelveticaN.ttf) format("truetype");
+  src: url(~assets/fonts/HelveticaN.ttf) format("truetype");
 }
 *{
   font-family: "HelveticaN", "Arial";
@@ -154,3 +142,4 @@ p{
   transition: all .2s ease;
 }
 </style>
+

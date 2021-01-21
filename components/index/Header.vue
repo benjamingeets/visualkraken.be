@@ -8,9 +8,9 @@
             <p>VisualKraken, votre agence web à Tournai</p>
         </div>
         <div class="image">
-            <img src="@/assets/header.png" alt="">
+            <img src="~/assets/header.png" alt="">
         </div>
-        <img id="mouse" src="@/assets/mouse.png" alt="" @click="goTo()">
+        <img id="mouse" src="~/assets/mouse.png" alt="" @click="goTo()">
     </div>
     
 </template>
@@ -62,6 +62,7 @@ $transition : 0.3s ease-in-out;
     @media (max-width: 1024px){
         .header{
             flex-direction: column-reverse;
+            align-content: flex-start;
             .text{
                 width: 100%;
             }
@@ -69,7 +70,7 @@ $transition : 0.3s ease-in-out;
                 width: 100%;
                 text-align: center;
                 img{
-                    width: 50%;
+                    width: 80%;
                 }
             }
         }
@@ -80,8 +81,9 @@ $transition : 0.3s ease-in-out;
     @media (max-width:480px){
         .header{
             .image{
+                margin-bottom:30%;
                 img{
-                    width: 80%;
+                    width: 100%;
                 }
             }
         }
