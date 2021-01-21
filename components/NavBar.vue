@@ -114,9 +114,15 @@ nav{
         height: 120px ;
         .logo{
             width: 100%;
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
+            a{
+                margin:auto;
+                img{
+                margin: 0 0 0 auto;
+                }
+                h1{
+                    margin: 0 auto 0 0;
+                }
+            }
         }
         ul{
             display: none;

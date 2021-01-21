@@ -16,7 +16,9 @@
         </div> 
         <div class="persons">
             <div class="card">
-                <img src="~/assets/benjamin.jpg" alt="">
+                <div class="img">
+                    <img src="~/assets/benjamin.jpg" alt="">
+                </div>
                 <h3>Benjamin Geets</h3>
                 <h4>Développeur</h4>
                 <p>Etudiant de 21 ans, il a commencé à s’intéresser au web dès son plus jeune age lui permettant  d’être le plus à jour possible</p>
@@ -33,7 +35,9 @@
                 </div>
             </div>
            <div class="card">
-                <img src="~/assets/tristan.jpg" alt="">
+                <div class="img">
+                    <img src="~/assets/tristan.jpg" alt="">
+                </div>
                 <h3>Tristan Galand</h3>
                 <h4>Designer</h4>
                 <p>Etudiant de 22 ans, il dispose d’une vision des choses et d’une maitrise de l’expérience utilisateur afin de fournir des utilisations toujours plus plaisantes.</p>
