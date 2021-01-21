@@ -19,7 +19,7 @@
             <div class="close">
                 <img src="~/assets/cross.png" alt="">
             </div>
-           <img src="~/assets/logo_white.png" alt="">
+           <img src="~/assets/logo_white.svg" alt="">
             <h1>VisualKraken</h1>
             <p><NuxtLink to="/">Accueil</NuxtLink></p>
             <p><NuxtLink to="/blog">Blog</NuxtLink></p>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- A vous êtes là vous? Bah super-->
     <NavBar/>
     <div class="container">
       <transition name="fade" mode="out-in">
@@ -19,6 +20,7 @@ $gris : #7A7A7A;
 @font-face {
   font-family: "HelveticaN";
   src: url(~assets/fonts/HelveticaN.ttf) format("truetype");
+  font-display: swap;
 }
 *{
   font-family: "HelveticaN", "Arial";

@@ -10,7 +10,7 @@
         </a>
         <div class="top">
             <div class="logo">
-                <img src="@/assets/logo_white.png" alt="" loading="lazy">
+                <img src="@/assets/logo_white.svg" alt="" loading="lazy">
                 <p>VisualKraken</p>
             </div>
             <div class="liste">
