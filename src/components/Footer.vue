@@ -39,6 +39,7 @@
             </div>
             <div class="social">
                 <a href="https://facebook.com/visualkrakenbe">
+<<<<<<< Updated upstream:src/components/Footer.vue
                 <img src="@/assets/facebook.png" alt="" loading="lazy">
                 </a>
                 <a href="https://twitter.com/Visualkrakenbe">
@@ -46,6 +47,15 @@
                 </a>
                 <a href="https://instagram.com/visualkrakenbe">
                     <img src="@/assets/instagram.png" alt="" loading="lazy">
+=======
+                <img src="~/assets/facebook.png" alt="" loading="lazy">
+                </a>
+                <a href="https://twitter.com/Visualkrakenbe">
+                <img src="~/assets/twitter.png" alt="" loading="lazy">
+                </a>
+                <a href="https://instagram.com/visualkrakenbe">
+                    <img src="~/assets/instagram.png" alt="" loading="lazy">
+>>>>>>> Stashed changes:components/Footer.vue
                 </a>
             </div>
             <div class="rgpd" @click="goTop();">
