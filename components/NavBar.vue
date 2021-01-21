@@ -17,7 +17,7 @@
         </div>
         <div v-if="displayHmb" class="hamburger-menu" @click="hmbMenu()">
             <div class="close">
-                <img src="assets/cross.png" alt="">
+                <img src="~/assets/cross.png" alt="">
             </div>
            <img src="~/assets/logo_white.png" alt="">
             <h1>VisualKraken</h1>

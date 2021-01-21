@@ -8,7 +8,7 @@
             <p>VisualKraken, votre agence web à Tournai</p>
         </div>
         <div class="image">
-            <img src="~/assets/header.png" alt="">
+            <img src="~/assets/header.svg" alt="">
         </div>
         <img id="mouse" src="~/assets/mouse.png" alt="" @click="goTo()">
     </div>
