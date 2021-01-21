@@ -46,6 +46,9 @@ $transition : 0.3s ease-in-out;
                 border-radius: 50px;
                 margin: 30px 0 0 0 ;
             }
+            p{
+                margin-top:20px;
+            }
         }
         .image{
             width: 50%;
