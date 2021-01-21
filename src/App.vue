@@ -33,7 +33,7 @@ $gris : #7A7A7A;
   src: url(./fonts/HelveticaN.ttf) format("truetype");
 }
 *{
-  font-family: "HelveticaN";
+  font-family: "HelveticaN", "Arial";
   padding:0;
   margin:0;
   border:0;
