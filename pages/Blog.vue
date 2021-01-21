@@ -74,8 +74,10 @@ export default {
             
         }
     },
-    mounted(){
-        document.title = "VisualKraken - Blog"
+    head(){
+        return{
+            title:"VisualKraken - Blog"
+        }
     }
 }
 </script>
