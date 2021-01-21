@@ -173,9 +173,26 @@ $bleu : #2463AA;
         .about{
             .equipe{
                 .card{
+                    padding:10px;
                     .contenu{
+                        h3{
+                            font-size:1.2em;
+                            margin:5px;
+                        }
+                        h4{
+                            font-size:1em;
+                            margin:5px;
+                        }
+                        p{
+                            font-size:0.8em;
+                            margin:10px 0;
+                        }
                         .social{
                             width: 100%;
+                            margin-top:10px;
+                            a{
+                                width: 10%;
+                            }
                         }
                     }
                 }
