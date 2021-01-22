@@ -3,14 +3,14 @@
         <h2 class="section-title text-center">Articles</h2>
         <div>
             <div class="articleUn">
-                <img src="https://via.placeholder.com/756x536" alt="" loading="lazy">
-                <h3>UX Design c vraiment sympa le bail </h3>
-                <p>Tout ce qu'il faut savoir</p>
+                <img :src='reco[0].urlImage' alt="" loading="lazy">
+                <h3>{{reco[0].titre}} </h3>
+                <p>{{reco[1].soustitre}}</p>
             </div>
             <div class="articleDeux">
-                <img src="https://via.placeholder.com/465x306" alt="" loading="lazy">
-                <h3>Le développement c vraiment bon délire han</h3>
-                <p>Tout ce qu'il faut savoir</p>
+                <img :src='reco[1].urlImage' alt="" loading="lazy">
+                <h3>{{reco[1].titre}}</h3>
+                <p>{{reco[1].soustitre}}</p>
                 <router-link to="/blog">
                     <div class="button" @click="goTop()">
                         <p>Voir plus</p>
@@ -24,11 +24,41 @@
 <script>
 export default {
     name:"Articles",
+    data(){
+        return{
+            reco: [
+                {
+                titre : "...",
+                soustitre :"...",
+                urlImage : "https://apivisualkraken.herokuapp.com"
+                },
+                {
+                    titre : "...",
+                    soustitre :"...",
+                    urlImage : "https://apivisualkraken.herokuapp.com"
+                }
+                ]
+        }
+    },
     methods:{
         goTop(){
             document.querySelector("html").style.scrollBehavior = "auto"
             window.scroll(0,-10000)
         }
+    },
+    beforeMount(){
+        const axios = require('axios').default;
+        axios.get("https://apivisualkraken.herokuapp.com/articles")
+        .then((response)=>{
+            const articles = response.data
+            for (let i = 0; i < 2; i++) {
+                this.reco[i].titre = response.data[i].titre
+                this.reco[i].urlImage = this.reco[i].urlImage+response.data[i].image.url
+                this.reco[i].slug = response.data[i].slug
+                this.reco[i].soustitre = response.data[i].soustitre
+            }
+            
+        })
     }
 }
 </script>
