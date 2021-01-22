@@ -3,14 +3,18 @@
         <h2 class="section-title text-center">Articles</h2>
         <div>
             <div class="articleUn">
-                <img :src='reco[0].urlImage' alt="" loading="lazy">
-                <h3>{{reco[0].titre}} </h3>
-                <p>{{reco[1].soustitre}}</p>
+                <NuxtLink :to='"/blog/" + reco[0].slug'>
+                    <img :src='reco[0].urlImage' alt="" loading="lazy">
+                    <h3>{{reco[0].titre}} </h3>
+                    <p>{{reco[1].soustitre}}</p>
+                </NuxtLink>
             </div>
             <div class="articleDeux">
-                <img :src='reco[1].urlImage' alt="" loading="lazy">
-                <h3>{{reco[1].titre}}</h3>
-                <p>{{reco[1].soustitre}}</p>
+                <NuxtLink :to='"/blog/" + reco[1].slug'>
+                    <img :src='reco[1].urlImage' alt="" loading="lazy">
+                    <h3>{{reco[1].titre}}</h3>
+                    <p>{{reco[1].soustitre}}</p>
+                </NuxtLink>
                 <router-link to="/blog">
                     <div class="button" @click="goTop()">
                         <p>Voir plus</p>
@@ -74,7 +78,9 @@ export default {
         justify-content: space-between;
         .articleUn{
             width:60%;
-            display: flex;
+            a{
+                width: 100%;
+                display: flex;
             flex-wrap: wrap;
             justify-content: left;
             align-items: center;
@@ -83,6 +89,7 @@ export default {
             }
             h3{
                 margin-right: 10px;
+            }
             }
         }
         .articleDeux{
