@@ -2,7 +2,7 @@
     <div class="articles">
         <h2 class="section-title text-center">Articles</h2>
         <div>
-            <div class="articleUn">
+            <div class="articleUn" @click="goTop()">
                 <NuxtLink :to='"/blog/" + reco[0].slug'>
                     <img :src='reco[0].urlImage' alt="" loading="lazy">
                     <h3>{{reco[0].titre}} </h3>
@@ -11,9 +11,9 @@
             </div>
             <div class="articleDeux">
                 <NuxtLink :to='"/blog/" + reco[1].slug'>
-                    <img :src='reco[1].urlImage' alt="" loading="lazy">
-                    <h3>{{reco[1].titre}}</h3>
-                    <p>{{reco[1].soustitre}}</p>
+                    <img :src='reco[1].urlImage' alt="" loading="lazy" @click="goTop()">
+                    <h3 @click="goTop()">{{reco[1].titre}}</h3>
+                    <p @click="goTop()">{{reco[1].soustitre}}</p>
                 </NuxtLink>
                 <router-link to="/blog">
                     <div class="button" @click="goTop()">
@@ -26,10 +26,13 @@
 </template>
 
 <script>
+import data from "~/assets/articles.json"
+
 export default {
     name:"Articles",
     data(){
         return{
+            articles : data,
             reco: [
                 {
                 titre : "...",
@@ -51,18 +54,12 @@ export default {
         }
     },
     beforeMount(){
-        const axios = require('axios').default;
-        axios.get("https://apivisualkraken.herokuapp.com/articles")
-        .then((response)=>{
-            const articles = response.data
-            for (let i = 0; i < 2; i++) {
-                this.reco[i].titre = response.data[i].titre
-                this.reco[i].urlImage = this.reco[i].urlImage+response.data[i].image.url
-                this.reco[i].slug = response.data[i].slug
-                this.reco[i].soustitre = response.data[i].soustitre
-            }
-            
-        })
+        for (let i = 0; i < 2; i++) {
+            this.reco[i].titre = this.articles[i].titre
+            this.reco[i].soustitre = this.articles[i].soustitre
+            this.reco[i].urlImage = this.articles[i].urlImage
+            this.reco[i].slug = this.articles[i].slug
+        }
     }
 }
 </script>

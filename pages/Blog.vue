@@ -4,7 +4,7 @@
             <div class="articles_container">
                 <div v-for='article in articles' :key="article.titre" class="article" @click="goTop()">
                     <router-link :to='"/blog/" + article.slug'>
-                        <img :src="apiURL + article.image.url" alt="" loading="lazy">
+                        <img :src='article.urlImage' alt="" loading="lazy">
                     <h3>
                         {{article.titre}}
                     </h3>
@@ -56,14 +56,13 @@
 </style>
 
 <script>
+import data from "~/assets/articles.json"
 
 export default {
     name:"Blog",
     data(){
         return{
-            slug : "",
-            articles : [],
-            apiURL : "https://apivisualkraken.herokuapp.com"
+            articles : data
         }
     },
     components:{
@@ -79,11 +78,6 @@ export default {
         return{
             title:"VisualKraken - Blog"
         }
-    },
-    async fetch() {
-      this.articles = await fetch(
-        'https://apivisualkraken.herokuapp.com/articles'
-      ).then(res => res.json())
     }
 }
 </script>

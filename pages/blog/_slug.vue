@@ -132,6 +132,9 @@ nav{
 </style>
 
 <script>
+
+import data from "~/assets/articles.json"
+
 export default {
     name:"Contact",
     head(){
@@ -141,70 +144,52 @@ export default {
     },
     data(){
         return{
-            titre : "...",
-            soustitre : "...",
-            texte : "...",
-            urlImage : "https://apivisualkraken.herokuapp.com",
+            articles: data,
+            titre:"titre",
+            soustitre:"soustitre",
+            texte:"texte",
+            urlImage:"",
             reco: [
                 {
                 titre : "...",
                 soustitre :"...",
-                urlImage : "https://apivisualkraken.herokuapp.com"
+                urlImage : ""
                 },
                 {
                     titre : "...",
                     soustitre :"...",
-                    urlImage : "https://apivisualkraken.herokuapp.com"
+                    urlImage : ""
                 },
                 {
                 titre : "...",
                 soustitre :"...",
-                urlImage : "https://apivisualkraken.herokuapp.com",
+                urlImage : "",
                 slug : ""
                }]
         }
     },
     beforeMount(){
-        const axios = require('axios').default;
-        let nbrArticles = 0
-        axios.get("https://apivisualkraken.herokuapp.com/articles/count")
-        .then((response)=>{
-            nbrArticles = parseInt(response.data)
-        })
-
-        
-
-        axios.get("https://apivisualkraken.herokuapp.com/articles")
-        .then((response)=>{
-            const articles = response.data
-            articles.forEach(element =>{
-                if (element.slug == this.$route.params.slug) {
-                    this.titre = element.titre
-                    this.soustitre = element.soustitre
-                    this.texte = element.texte
-                    this.urlImage = this.urlImage + element.image.url
-                }
-            })
-            for (let i = 0; i < 3; i++) {
-                this.reco[i].titre = response.data[i].titre
-                this.reco[i].urlImage = this.reco[i].urlImage+response.data[i].image.url
-                this.reco[i].slug = response.data[i].slug
-                this.reco[i].soustitre = response.data[i].soustitre
+        this.articles.forEach(element => {
+            if(element.slug == this.$route.params.slug){
+                this.titre = element.titre
+                this.soustitre = element.soustitre
+                this.texte = element.texte
+                this.urlImage = element.urlImage
             }
-            
-        })
+        });
 
-        
-        
+        for (let i = 0; i < 3; i++) {
+            this.reco[i].titre = this.articles[i].titre
+            this.reco[i].slug = this.articles[i].slug
+            this.reco[i].soustitre = this.articles[i].soustitre
+            this.reco[i].urlImage = this.articles[i].urlImage
+        }
     },
     methods:{
         goTop(){
             document.querySelector("html").style.scrollBehavior = "auto"
             window.scroll(0,-10000)
             
-        },
-        updateTitre(){
-            alert("oui?")
         }
     }
 }
