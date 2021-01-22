@@ -3,9 +3,10 @@
             <div class="blog-post">
                 <h2>{{titre}}</h2>
                 <div class="texte">
-                  <img src="https://via.placeholder.com/970x668" alt="">
+                  <img :src='urlImage' alt="">
                     <h3>{{soustitre}}</h3>
-                    <p>{{texte}}</p>
+                    <p>{{texte}}
+                    </p>
                     <div class="liens">
                         <router-link to="/">
                             <div class="button button-gradient" @click="goTop()">
@@ -20,20 +21,26 @@
                     </div>
                     <div class="recommandes">
                         
-                        <div>
-                            <img src="https://via.placeholder.com/465x306" alt="" loading="lazy">
-                            <h3>UX design</h3>
-                            <p>les trucs à savoir</p>
+                        <div @click="goTop()">
+                            <NuxtLink :to='"/blog/" + reco[0].slug'>
+                                <img :src="reco[0].urlImage" alt="" loading="lazy">
+                                <h3>{{reco[0].titre}}</h3>
+                                <p>{{reco[0].soustitre}}</p>
+                            </NuxtLink>
                         </div>
-                        <div>
-                            <img src="https://via.placeholder.com/465x306" alt="" loading="lazy">
-                            <h3>UX design</h3>
-                            <p>les trucs à savoir</p>
+                        <div @click="goTop()">
+                           <NuxtLink :to='"/blog/" + reco[1].slug'>
+                                <img :src="reco[1].urlImage" alt="" loading="lazy">
+                                <h3>{{reco[1].titre}}</h3>
+                                <p>{{reco[1].soustitre}}</p>
+                            </NuxtLink>
                         </div>
-                        <div>
-                            <img src="https://via.placeholder.com/465x306" alt="" loading="lazy">
-                            <h3>UX design</h3>
-                            <p>les trucs à savoir</p>
+                        <div @click="goTop()">
+                            <NuxtLink :to='"/blog/" + reco[2].slug'>
+                                <img :src="reco[2].urlImage" alt="" loading="lazy">
+                                <h3>{{reco[2].titre}}</h3>
+                                <p>{{reco[2].soustitre}}</p>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -134,18 +141,70 @@ export default {
     },
     data(){
         return{
-            titre : "Titre",
-            soustitre : "Sous-titre",
-            texte : "Lorem ipsum blabla texte quoi tu connais"
+            titre : "...",
+            soustitre : "...",
+            texte : "...",
+            urlImage : "https://apivisualkraken.herokuapp.com",
+            reco: [
+                {
+                titre : "...",
+                soustitre :"...",
+                urlImage : "https://apivisualkraken.herokuapp.com"
+                },
+                {
+                    titre : "...",
+                    soustitre :"...",
+                    urlImage : "https://apivisualkraken.herokuapp.com"
+                },
+                {
+                titre : "...",
+                soustitre :"...",
+                urlImage : "https://apivisualkraken.herokuapp.com",
+                slug : ""
+               }]
         }
     },
-    components:{
+    beforeMount(){
+        const axios = require('axios').default;
+        let nbrArticles = 0
+        axios.get("https://apivisualkraken.herokuapp.com/articles/count")
+        .then((response)=>{
+            nbrArticles = parseInt(response.data)
+        })
+
+        
+
+        axios.get("https://apivisualkraken.herokuapp.com/articles")
+        .then((response)=>{
+            const articles = response.data
+            articles.forEach(element =>{
+                if (element.slug == this.$route.params.slug) {
+                    this.titre = element.titre
+                    this.soustitre = element.soustitre
+                    this.texte = element.texte
+                    this.urlImage = this.urlImage + element.image.url
+                }
+            })
+            for (let i = 0; i < 3; i++) {
+                this.reco[i].titre = response.data[i].titre
+                this.reco[i].urlImage = this.reco[i].urlImage+response.data[i].image.url
+                this.reco[i].slug = response.data[i].slug
+                this.reco[i].soustitre = response.data[i].soustitre
+            }
+            
+        })
+
+        
+        
     },
     methods:{
         goTop(){
             document.querySelector("html").style.scrollBehavior = "auto"
             window.scroll(0,-10000)
             
+        },
+        updateTitre(){
+            alert("oui?")
         }
     }
 }

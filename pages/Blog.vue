@@ -2,13 +2,13 @@
     <div>
             <h2 class="text-center">Blog</h2>
             <div class="articles_container">
-                <div v-for='article in articles' :key="article" class="article" @click="goTop()">
-                    <router-link to="/blog/article">
-                        <img src="https://via.placeholder.com/455x323" alt="" loading="lazy">
+                <div v-for='article in articles' :key="article.titre" class="article" @click="goTop()">
+                    <router-link :to='"/blog/" + article.slug'>
+                        <img :src="apiURL + article.image.url" alt="" loading="lazy">
                     <h3>
-                        UX Design c cool ou pas non je sais pas quoi lol
+                        {{article.titre}}
                     </h3>
-                    <p>Tout ce qu'il faut savoir</p>
+                    <p>{{article.soustitre}}</p>
                     </router-link>
                 </div>
             </div>
@@ -62,7 +62,8 @@ export default {
     data(){
         return{
             slug : "",
-            articles:["a","b","d","s"]
+            articles : [],
+            apiURL : "https://apivisualkraken.herokuapp.com"
         }
     },
     components:{
@@ -78,6 +79,11 @@ export default {
         return{
             title:"VisualKraken - Blog"
         }
+    },
+    async fetch() {
+      this.articles = await fetch(
+        'https://apivisualkraken.herokuapp.com/articles'
+      ).then(res => res.json())
     }
 }
 </script>
