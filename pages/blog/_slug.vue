@@ -168,7 +168,7 @@ export default {
                }]
         }
     },
-    beforeMount(){
+    mounted(){
         this.articles.forEach(element => {
             if(element.slug == this.$route.params.slug){
                 this.titre = element.titre

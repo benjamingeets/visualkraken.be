@@ -1,5 +1,5 @@
 <template>
-    <form action="">
+    <form action="https://benjamingeets.be/mail.php" method="POST">
             <div id="nommail">
                 <div id="nom">
                     <label for="nom">Nom</label><input name="nom" type="text" v-model="nom" v-on:input='verifier("nom")' required>
