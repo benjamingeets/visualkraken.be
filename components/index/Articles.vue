@@ -37,12 +37,12 @@ export default {
                 {
                 titre : "...",
                 soustitre :"...",
-                urlImage : "https://apivisualkraken.herokuapp.com"
+                urlImage : ""
                 },
                 {
                     titre : "...",
                     soustitre :"...",
-                    urlImage : "https://apivisualkraken.herokuapp.com"
+                    urlImage : ""
                 }
                 ]
         }

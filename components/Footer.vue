@@ -128,18 +128,24 @@ footer{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        width: 80%;
+        margin:auto;
         .rgpd{
+            width: 30%;
+            text-align: right;
             a{
                 color:white;
             }
         }
         .copyright{
+            width: 30%;
             color:white
         }
         .social{
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 30%;
             a{
                 margin:0 10px;
                 text-align: center;
@@ -160,7 +166,24 @@ footer{
     footer{
         svg{
         height: 40px;
-    }
+        
+       }
+       .bottom{
+           width: 100%;
+           flex-wrap: wrap;
+           .copyright{
+               width: 100%;
+               text-align: center;
+           }
+           .social{
+               width: 100%;
+               margin:5px;
+           }
+           .rgpd{
+               width: 100%;
+               text-align: center;
+           }
+       }
     }
 }
 @media (max-width:480px){

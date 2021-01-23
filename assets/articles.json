@@ -11,13 +11,13 @@
         "soustitre" : "soustitre2",
         "texte" : "blabla",
         "slug" : "article-deux",
-        "urlImage" : "http://via.placeholder.com/150x150"
+        "urlImage" : "http://via.placeholder.com/1920x1080"
     },
     {
         "titre" : "titre3",
         "soustitre" : "soustitre3",
         "texte" : "blabla",
         "slug" : "article-trois",
-        "urlImage" : "http://via.placeholder.com/150x150"
+        "urlImage" : "http://via.placeholder.com/1920x1080"
     }
 ]
