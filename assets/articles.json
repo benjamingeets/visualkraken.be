@@ -4,20 +4,20 @@
         "soustitre" : "soustitre1",
         "texte" : "blabla",
         "slug" : "article-un",
-        "urlImage" : "http://via.placeholder.com/1920x1080"
+        "urlImage" : "https://via.placeholder.com/1920x1080"
     },
     {
         "titre" : "titre2",
         "soustitre" : "soustitre2",
         "texte" : "blabla",
         "slug" : "article-deux",
-        "urlImage" : "http://via.placeholder.com/1920x1080"
+        "urlImage" : "https://via.placeholder.com/1920x1080"
     },
     {
         "titre" : "titre3",
         "soustitre" : "soustitre3",
         "texte" : "blabla",
         "slug" : "article-trois",
-        "urlImage" : "http://via.placeholder.com/1920x1080"
+        "urlImage" : "https://via.placeholder.com/1920x1080"
     }
 ]
