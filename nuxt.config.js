@@ -18,18 +18,17 @@ export default {
       { property:'og:url',content:'https://visualkraken.be'},
       { property:'og:locale',content:'fr_FR'},
       { property:'og:description',content:'VisualKraken, votre agence web dans la région de Tournai (Site internet, communication, graphisme,...)'},
-      { property:'og:image',content:'/_nuxt/assets/share.png'},
+      { property:'og:image',content:'https://i.ibb.co/gF425mG/share.png'},
       { name:'twitter:card', content:'summary'},
       {name:'twitter:url', content:'https://visualkraken.be'},
       {name:'twitter:title', content:'VisualKraken - Votre site, au pixel près sur Tournai'},
       {name:'twitter:description', content:'VisualKraken, votre agence web dans la région de Tournai (Site internet, communication, graphisme,...)'},
-      {name:'twitter:image', content:'/_nuxt/assets/share.png'},
+      {name:'twitter:image', content:'https://i.ibb.co/gF425mG/share.png'},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
