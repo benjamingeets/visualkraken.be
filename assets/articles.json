@@ -73,7 +73,7 @@
             }
         },
         "slug" : "UX-vs-UI",
-        "urlImage" : "/ux.jpg",
+        "urlImage" : "~/assets/ux.jpg",
         "auteur" : "galandtristan"
     }
 ]

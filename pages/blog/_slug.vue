@@ -3,7 +3,7 @@
             <div class="blog-post">
                 <h2>{{titre}}</h2>
                 <div class="article">
-                  <img :src='urlImage' alt="">
+                  <img src='{{urlImage}}' alt="">
                     <div class="text-content" v-for="texte in article" :key='texte.contenu' style="margin-top:10px;">
                         <h3 v-if="texte.titre">{{texte.titre}}</h3>
                         <p>{{texte.contenu}}</p>
