@@ -6,7 +6,7 @@
                 <NuxtLink :to='"/blog/" + reco[0].slug'>
                     <img :src='reco[0].urlImage' alt="" loading="lazy">
                     <h3>{{reco[0].titre}} </h3>
-                    <p>{{reco[1].soustitre}}</p>
+                    <p>{{reco[0].soustitre}}</p>
                 </NuxtLink>
             </div>
             <div class="articleDeux">
@@ -91,6 +91,7 @@ export default {
                 }
                 h3{
                     margin-right: 10px;
+                    margin: 20px 0;
                 }
             }
         }
