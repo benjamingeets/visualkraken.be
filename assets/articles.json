@@ -15,7 +15,7 @@
             }
         },
         "slug" : "pourquoi-eviter-les-CMS-opensource-pour-votre-site-internet",
-        "urlImage" : "/wp.jpg",
+        "urlImage" : "wp",
         "auteur" : "benjamingeets"
     },
     {
@@ -37,7 +37,7 @@
             }
         },
         "slug" : "developpeur-de-site-internet-a-Tournai",
-        "urlImage" : "/code.jpg",
+        "urlImage" : "code",
         "auteur" : "benjamingeets"
     },
     {
