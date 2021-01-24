@@ -15,7 +15,7 @@
                 <label for="message">Message</label>
                 <textarea v-model="message" name="message" id="" cols="30" rows="10" v-on:input='verifier("message")' required></textarea>
             </div>
-            <div v-if="displayButton" class="button button-gradient">
+            <div class="button button-gradient">
                 <input class="" type="submit" value="Envoyer" >
             </div>
         </form>
