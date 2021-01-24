@@ -23,6 +23,13 @@
     justify-content: space-between;
     .article{
         width: 30%;
+        a{
+            &:hover{
+                img{
+                filter: grayscale(100%)
+            }
+            }
+        }
         img{
             border-radius: 1em;
             width: 100%;

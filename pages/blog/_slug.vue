@@ -113,6 +113,16 @@ nav{
             justify-content: space-evenly;
             div{
                 width: 30%;
+                a{
+                    img{
+                        filter: grayscale(100%)
+                    }
+                    &:hover{
+                        img{
+                            filter: grayscale(0%)
+                        }
+                    }
+                }
                 h3{
                     margin:0;
                     font-size:1em;

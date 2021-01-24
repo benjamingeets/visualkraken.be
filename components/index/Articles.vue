@@ -78,18 +78,31 @@ export default {
             a{
                 width: 100%;
                 display: flex;
-            flex-wrap: wrap;
-            justify-content: left;
-            align-items: center;
-            img{
-                width: 100%;
-            }
-            h3{
-                margin-right: 10px;
-            }
+                flex-wrap: wrap;
+                justify-content: left;
+                align-items: center;
+                &:hover{
+                    img{
+                        filter: grayscale(100%)
+                    }
+                }
+                img{
+                    width: 100%;
+                }
+                h3{
+                    margin-right: 10px;
+                }
             }
         }
         .articleDeux{
+            a{
+                &:hover{
+                    img{
+                        filter: grayscale(100%)
+                    }
+                    
+                }
+            }
             width:35%;
             display: flex;
             flex-direction: column;
