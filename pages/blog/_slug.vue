@@ -18,7 +18,7 @@
                             </div>
                         </router-link>
                         <router-link to="/blog">
-                            <div class="button">
+                            <div class="button" @click="goTop()">
                                 <p>Voir tous les articles</p>
                             </div>
                         </router-link>
@@ -161,8 +161,8 @@ export default {
         return{
             title: this.titre + " - VisualKraken",
             meta:[
-               { property: 'og:title', content: this.titre + " - VisualKraken"},
-               { name:'twitter:title', content: this.titre + '- VisualKraken'}
+               { property: 'og:title', content: `${this.titre} - VisualKraken`},
+               { name:'twitter:title', content: `${this.titre} - VisualKraken`}
             ]
         }
     },
