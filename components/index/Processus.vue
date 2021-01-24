@@ -8,6 +8,11 @@
 
 <style lang="scss">
 .processus{
+    width: 100%;
+    text-align: center;
+    #desktop{
+        width: 60%;
+    }
     margin-top:200px;
     img{
         width: 100%;

@@ -34,22 +34,22 @@ $gris : #7A7A7A;
 }
 
 .container{
-  width: 80%;
+  width: 60%;
   margin:auto;
   min-height: 65vh;
 }
 
 h2{
-  font-size:4.3em;
+  font-size:3.4em;
 }
 h3{
   color:$bleu;
-  font-size:3em;
+  font-size:2.2em;
   margin: 50px 0;
 }
 p{
   color:$gris;
-  font-size:1.5em;
+  font-size:1.2em;
   line-height: 150%;
 }
 .text-center{
@@ -99,8 +99,15 @@ p{
     transform: scale(1.05);
   }
 }
-
+@media (max-width:1500px){
+  .container{
+    width: 80%;
+  }
+}
 @media (max-width:1024px){
+  .container{
+    width: 90%;
+  }
 
   .tablette-center{
     margin:auto;

@@ -112,14 +112,15 @@ $bleu : #2463AA;
             h3{
                 margin:30px 0 20px 0;
                 text-align: center;
+                font-size:2em;
             }
             h4{
                 margin:10px 0;
                 color:white;
-                font-size:2em;
+                font-size:1.5em;
             }
             p{
-                font-size: 1.3em;
+                font-size: 1em;
                 margin:10px 0;
             }
             .social{
