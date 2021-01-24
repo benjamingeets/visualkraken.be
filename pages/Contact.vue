@@ -18,7 +18,11 @@ export default {
     },
     head(){
         return{
-            title:"VisualKraken - Contact"
+            title:"VisualKraken - Contact",
+            meta:[
+               { property: 'og:title', content: "Contact - VisualKraken"},
+               { name:'twitter:title', content: 'Contact - VisualKraken'}
+            ]
         }
     }
 }

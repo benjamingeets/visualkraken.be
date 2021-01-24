@@ -208,7 +208,11 @@ export default {
     },
     head(){
         return{
-            title:"VisualKraken - A propos"
+            title:"VisualKraken - A propos",
+            meta:[
+               { property: 'og:title', content: "A propos - VisualKraken"},
+               { name:'twitter:title', content: 'A propos - VisualKraken'}
+            ]
         }
     }
 }

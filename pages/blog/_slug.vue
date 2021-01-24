@@ -4,11 +4,11 @@
                 <h2>{{titre}}</h2>
                 <div class="article">
                   <img :src='urlImage' alt="">
-                    <div class="text-content" v-for="texte in article" :key="texte" style="margin-top:10px;">
+                    <div class="text-content" v-for="texte in article" :key='texte.contenu' style="margin-top:10px;">
                         <h3 v-if="texte.titre">{{texte.titre}}</h3>
                         <p>{{texte.contenu}}</p>
                         <ul v-if="texte.liste">
-                            <li v-for="el in texte.liste" :key="el"><p>➡️ {{el}}</p></li>
+                            <li v-for="el in texte.liste" :key='el'><p>➡️ {{el}}</p></li>
                         </ul>
                     </div>
                     <div class="liens">
@@ -133,6 +133,14 @@ nav{
 @media(max-width:480px){
     .blog-post{
         .article{
+            .text-content{
+                p{
+                    margin: 5px 0;
+                }
+                h3{
+                    margin:10px 0;
+                }
+            }
             .liens{
                 flex-direction: column;
                 justify-content: center;
@@ -151,7 +159,11 @@ export default {
     name:"Contact",
     head(){
         return{
-            title: this.titre + " - VisualKraken"
+            title: this.titre + " - VisualKraken",
+            meta:[
+               { property: 'og:title', content: this.titre + " - VisualKraken"},
+               { name:'twitter:title', content: this.titre + '- VisualKraken'}
+            ]
         }
     },
     data(){
@@ -180,7 +192,7 @@ export default {
                }]
         }
     },
-    mounted(){
+    async fetch(){
         this.articles.forEach(element => {
             if(element.slug == this.$route.params.slug){
                 this.titre = element.titre

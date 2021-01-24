@@ -76,7 +76,11 @@ export default {
     },
     head(){
         return{
-            title:"VisualKraken - Blog"
+            title:"VisualKraken - Blog",
+            meta:[
+               { property: 'og:title', content: "Blog - VisualKraken"},
+               { name:'twitter:title', content: 'Blog - VisualKraken'}
+            ]
         }
     }
 }

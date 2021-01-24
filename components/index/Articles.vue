@@ -53,7 +53,7 @@ export default {
             window.scroll(0,-10000)
         }
     },
-    beforeMount(){
+    async fetch(){
         for (let i = 0; i < 2; i++) {
             this.reco[i].titre = this.articles[i].titre
             this.reco[i].soustitre = this.articles[i].soustitre

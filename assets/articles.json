@@ -39,7 +39,7 @@
         "urlImage" : "https://via.placeholder.com/1920x1080"
     },
     {
-        "titre" : "UI vs UX",
+        "titre" : "UI 🆚 UX",
         "soustitre" : "Quelles différences?",
         "article" : {
             "p1":{
@@ -61,6 +61,7 @@
                 "titre" : "Processus",
                 "contenu": "Afin d’élabore la meilleur interface il y a plusieurs étapes importante. ",
                 "liste":{
+                    "1":"Elaboration des personas",
                     "2":"Analyse de leurs besoins",
                     "3":"Elaboration d'une maquette papier",
                     "4":"Prototypage de la maquette",
@@ -70,7 +71,7 @@
                 }
             }
         },
-        "slug" : "importance-de-l-ux-design",
+        "slug" : "UX-vs-UI",
         "urlImage" : "https://via.placeholder.com/1920x1080"
     }
 ]
