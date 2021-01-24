@@ -1,7 +1,6 @@
 <template>
     <form name="contactus" action="/a-propos" method="POST"  netlify netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contactus" />
-    <div>  
+     <input type="hidden" name="form-name" value="contactus" />
             <div id="nommail">
                 <div id="nom">
                     <label for="nom">Nom</label><input name="nom" type="text" v-model="nom" v-on:input='verifier("nom")' required>

@@ -1,6 +1,7 @@
 <template>
     <div>
         <h2 class="text-center">Contact</h2>
+        <p v-if='$route.query.envoie' style="text-align:center">Votre message a bien été envoyé. Nous vous recontacterons dans les plus brefs délais.</p>
         <ContactForm/>
     </div>
 </template>
