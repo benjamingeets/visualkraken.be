@@ -1,5 +1,5 @@
 <template>
-    <form name="contact" method="POST" netlify>
+    <form method="POST" data-netlify="true">
             <div id="nommail">
                 <div id="nom">
                     <label for="nom">Nom</label><input name="nom" type="text" v-model="nom" v-on:input='verifier("nom")' required>
