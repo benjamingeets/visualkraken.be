@@ -28,21 +28,21 @@
                         
                         <div @click="goTop()">
                             <NuxtLink :to='"/blog/" + reco[0].slug'>
-                                <img :src="reco[0].urlImage" alt="" loading="lazy">
+                                <img :src='"~/assets/miniatures/" + reco[0].urlImage +".jpg"' alt="" loading="lazy">
                                 <h3>{{reco[0].titre}}</h3>
                                 <p>{{reco[0].soustitre}}</p>
                             </NuxtLink>
                         </div>
                         <div @click="goTop()">
                            <NuxtLink :to='"/blog/" + reco[1].slug'>
-                                <img :src="reco[1].urlImage" alt="" loading="lazy">
+                                <img :src='"~/assets/miniatures/" + reco[1].urlImage +".jpg"' alt="" loading="lazy">
                                 <h3>{{reco[1].titre}}</h3>
                                 <p>{{reco[1].soustitre}}</p>
                             </NuxtLink>
                         </div>
                         <div @click="goTop()">
                             <NuxtLink :to='"/blog/" + reco[2].slug'>
-                                <img :src="reco[2].urlImage" alt="" loading="lazy">
+                                <img :src='"~/assets/miniatures/" + reco[2].urlImage +".jpg"' alt="" loading="lazy">
                                 <h3>{{reco[2].titre}}</h3>
                                 <p>{{reco[2].soustitre}}</p>
                             </NuxtLink>
