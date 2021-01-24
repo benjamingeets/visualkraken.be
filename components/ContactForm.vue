@@ -1,22 +1,22 @@
 <template>
-    <form method="POST" name="contact-vk" action="/contact" data-netlify="true">
+    <form action="/contact" method="POST" netlify-data="true">
             <div id="nommail">
                 <div id="nom">
-                    <label for="nom">Nom</label><input name="nom" type="text" v-model="nom" v-on:input='verifier("nom")'>
+                    <label for="nom">Nom</label><input name="nom" type="text" v-model="nom" v-on:input='verifier("nom")' required>
                 </div>
                 <div id="mail">
-                    <label for="mail">Adresse email</label><input v-model="mail" name="mail" type="mail" v-on:input='verifier("mail")'>
+                    <label for="mail">Adresse email</label><input v-model="mail" name="mail" type="mail" v-on:input='verifier("mail")' required>
                 </div>
             </div>
             <div id="objet">
-                <label for="objet">Objet</label><input v-model="objet" name="objet" type="text" v-on:input='verifier("objet")'>
+                <label for="objet">Objet</label><input v-model="objet" name="objet" type="text" v-on:input='verifier("objet")' required>
             </div>
             <div id="message">
                 <label for="message">Message</label>
-                <textarea v-model="message" name="message" id="" cols="30" rows="10" v-on:input='verifier("message")'></textarea>
+                <textarea v-model="message" name="message" id="" cols="30" rows="10" v-on:input='verifier("message")' required></textarea>
             </div>
-            <div class="button button-gradient">
-                <input class="" name="submit" type="submit" value="Envoyer" >
+            <div v-if="displayButton" class="button button-gradient">
+                <input class="" type="submit" value="Envoyer" >
             </div>
             <div v-if="!displayButton" class="button button-false">
                 <p>Veuillez compléter les champs</p>
