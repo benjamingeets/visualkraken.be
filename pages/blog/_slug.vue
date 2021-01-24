@@ -2,10 +2,15 @@
     <div>
             <div class="blog-post">
                 <h2>{{titre}}</h2>
-                <div class="texte">
+                <div class="article">
                   <img :src='urlImage' alt="">
-                    <h3>{{soustitre}}</h3>
-                    <p v-for="pagagraphe in texte" style="margin-top:10px;">{{pagagraphe}}</p>
+                    <div class="text-content" v-for="texte in article" :key="texte" style="margin-top:10px;">
+                        <h3 v-if="texte.titre">{{texte.titre}}</h3>
+                        <p>{{texte.contenu}}</p>
+                        <ul v-if="texte.liste">
+                            <li v-for="el in texte.liste" :key="el"><p>➡️ {{el}}</p></li>
+                        </ul>
+                    </div>
                     <div class="liens">
                         <router-link to="/">
                             <div class="button button-gradient" @click="goTop()">
@@ -77,10 +82,18 @@ nav{
     h2{
         margin-bottom:50px;
     }
-    .texte{
+    .article{
         width: 65%;
         display: flex;
         flex-direction: column;
+        .text-content{
+            ul{
+                margin-left:30px;
+                li{
+                    margin-top:5px;
+                }
+            }
+        }
         img{
             border-radius: 1em;
             width: 100%;
@@ -109,7 +122,7 @@ nav{
 
 @media (max-width:1024px) {
     .blog-post{
-        .texte{
+        .article{
             width: 100% ;
             .recommandes{
                 display: none;
@@ -119,7 +132,7 @@ nav{
 }
 @media(max-width:480px){
     .blog-post{
-        .texte{
+        .article{
             .liens{
                 flex-direction: column;
                 justify-content: center;
@@ -146,7 +159,7 @@ export default {
             articles: data,
             titre:"titre",
             soustitre:"soustitre",
-            texte:"texte",
+            article:"article",
             urlImage:"",
             reco: [
                 {
@@ -172,7 +185,7 @@ export default {
             if(element.slug == this.$route.params.slug){
                 this.titre = element.titre
                 this.soustitre = element.soustitre
-                this.texte = element.texte
+                this.article = element.article
                 this.urlImage = element.urlImage
             }
         });

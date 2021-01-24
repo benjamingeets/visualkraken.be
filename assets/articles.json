@@ -2,10 +2,17 @@
     {
         "titre" : "Pourquoi éviter les CMS OpenSource pour votre site internet",
         "soustitre" : "Même s'ils sont souvent moins chers",
-        "texte" : {
-            "p1":"Si vous cherchez à vous faire réaliser un site internet, il est probable que votre interlocuteur vous parle de « CMS opensource », derrière ce terme faussement technique se cache WordPress. ",
-            "p2":"WordPress n’est pas un mal en soit, c’est un Content Management System. Un « logiciel » qui va vous permettre de gérer le contenu de votre site. Mais bien souvent, il est utilisé car, avec certains ajouts, il permet de concevoir des sites internets sans coder. Cela ayant l’avantage de demander moins de compétences. Mais le revers de la médaille, c’est que votre site internet est, de par les limitations de ce genre de procédés, moins personnalisable, plus lents, plus cher à maintenir sur Internet,…",
-            "p3":"Chez VisualKraken, nous n’utilisons pas ces technologies pour des sites dits « vitrines » (dont le contenu n’a pas à être modifié). Tous les produits sortant de nos ateliers ont été scrupuleusement codés à la main avec l’attention que cela requiert. Se faisant, nos sites sont plus rapides et favorisés par Google. Cela nous permet aussi de gérer la moindre couleur, le moindre pixel de ce qui est affiché. "
+        "article" : {
+            "p1":{
+                "titre" : "Même s'ils sont souvent moins chers",
+                "contenu" : "Si vous cherchez à vous faire réaliser un site internet, il est probable que votre interlocuteur vous parle de « CMS opensource », derrière ce terme faussement technique se cache WordPress. "
+            },
+            "p2":{
+                "contenu" :"WordPress n’est pas un mal en soit, c’est un Content Management System. Un « logiciel » qui va vous permettre de gérer le contenu de votre site. Mais bien souvent, il est utilisé car, avec certains ajouts, il permet de concevoir des sites internets sans coder. Cela ayant l’avantage de demander moins de compétences. Mais le revers de la médaille, c’est que votre site internet est, de par les limitations de ce genre de procédés, moins personnalisable, plus lents, plus cher à maintenir sur Internet,…"
+            },
+            "p3":{
+                "contenu":"Chez VisualKraken, nous n’utilisons pas ces technologies pour des sites dits « vitrines » (dont le contenu n’a pas à être modifié). Tous les produits sortant de nos ateliers ont été scrupuleusement codés à la main avec l’attention que cela requiert. Se faisant, nos sites sont plus rapides et favorisés par Google. Cela nous permet aussi de gérer la moindre couleur, le moindre pixel de ce qui est affiché. "
+            }
         },
         "slug" : "pourquoi-eviter-les-CMS-opensource-pour-votre-site-internet",
         "urlImage" : "https://via.placeholder.com/1920x1080"
@@ -13,20 +20,55 @@
     {
         "titre" : "Développeur de site internet à Tournai",
         "soustitre" : "Qui sommes-nous? Pourquoi nous faire confiance?",
-        "texte" : {
-            "p1": "Il n’est pas toujours aisé de trouver des acteurs du monde numérique en Belgique dès que l’on sort de Bruxelles. Mais si vous êtes dans la région de Tournai dans le Hainaut, vous pouvez faire appelle à VisualKraken.",
-            "p2":"Nous sommes une équipe de 2 étudiants en e-Business (Froyennes) qui avons lancé notre Start-Up il y a maintenant un an. Notre passion pour le numérique et nos études combinées nous permettent de fournir des services et sites internet toujours plus proche de votre demande et toujours plus performant. ",
-            "p3":"Nous utilisons des technologies comme VueJS, NodeJS, du HTML, CSS, NuxtJS afin d’optimiser votre SEO (référencement sur Google),… pour la partie web et si vos besoins sont liés à l’image, notre designer est comme un poisson dans l’eau sur la suite Adobe (Illustrator, Photoshop ainsi que Figma pour l’UX Design).",
-            "p4":"Si vous souhaitez nous accorder votre confiance, n’hésitez pas à nous contacter ! "
+        "article" : {
+            "p1":{
+                "titre" : "Qui sommes-nous? Pourquoi nous faire confiance?",
+                "contenu" : "Il n’est pas toujours aisé de trouver des acteurs du monde numérique en Belgique dès que l’on sort de Bruxelles. Mais si vous êtes dans la région de Tournai dans le Hainaut, vous pouvez faire appelle à VisualKraken."
+            },
+            "p2":{
+                "contenu" : "Nous sommes une équipe de 2 étudiants en e-Business (Froyennes) qui avons lancé notre Start-Up il y a maintenant un an. Notre passion pour le numérique et nos études combinées nous permettent de fournir des services et sites internet toujours plus proche de votre demande et toujours plus performant. "
+            },
+            "p3":{
+                "contenu" : "Nous utilisons des technologies comme VueJS, NodeJS, du HTML, CSS, NuxtJS afin d’optimiser votre SEO (référencement sur Google),… pour la partie web et si vos besoins sont liés à l’image, notre designer est comme un poisson dans l’eau sur la suite Adobe (Illustrator, Photoshop ainsi que Figma pour l’UX Design)."
+            },
+            "p4":{
+                "contenu" : "Si vous souhaitez nous accorder votre confiance, n’hésitez pas à nous contacter ! "
+            }
         },
         "slug" : "developpeur-de-site-internet-a-Tournai",
         "urlImage" : "https://via.placeholder.com/1920x1080"
     },
     {
-        "titre" : "L'importance de l'UX Design",
-        "soustitre" : "Votre utilisateur au centre de votre produit",
-        "texte" : {
-            "p1":"[Work In Progress]"
+        "titre" : "UI vs UX",
+        "soustitre" : "Quelles différences?",
+        "article" : {
+            "p1":{
+                "titre":"Quels sont les différences ? ",
+                "contenu":"L'UX représente le parcours que va suivre l'utilisateur. Acronyme anglaise de User eXpérience, l’UX design l’expérience utilisateur. C’est avant tout le design d’interface, l’interface dans laquelle l’utilisateur sera plongé."
+            },
+            "p2":{
+                "contenu":"L'UI design est, en réalité, une branche de l'UX. Elle a comme but l'esthétique du support. User Interface, en anglais, signifie donc l'interface utilisateur. Tout ce que verra l'utilisateur lorsqu'il est sur le site ou l'application."
+            }
+            ,
+            "p3":{
+                "titre":"Pourquoi utiliser ce service ? ",
+                "contenu":"L'UX et L'UI deviennent primordiale pour le design d'un support numérique car si l'utilisateur a des facilités à utiliser le site web, il n'en sera que plus satisfait et reviendra plus facilement. Si ce n’est pas le cas, l’utilisateur peut être plus réticent à utiliser le site web. "
+            },
+            "p4":{
+                "contenu" : "Tout cela parait anodin mais afin de proposer aux clients potentielle le meilleur service cette démarche est nécessaire. "
+            },
+            "p5":{
+                "titre" : "Processus",
+                "contenu": "Afin d’élabore la meilleur interface il y a plusieurs étapes importante. ",
+                "liste":{
+                    "2":"Analyse de leurs besoins",
+                    "3":"Elaboration d'une maquette papier",
+                    "4":"Prototypage de la maquette",
+                    "5": "Test de la maquette auprès des personas",
+                    "6":"Rectification des problèmes survenus",
+                    "7":"Développement"
+                }
+            }
         },
         "slug" : "importance-de-l-ux-design",
         "urlImage" : "https://via.placeholder.com/1920x1080"
