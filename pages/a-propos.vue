@@ -8,7 +8,7 @@
                 </h3>
                 <p>VisualKraken, c’est l’union de 2 jeunes étudiants avec un objectif clair: accompagner les petits entreprises et indépendants dans leur croissance à travers les nouveaux médias. Notre jeunesse et nos connaissances font de nous de véritables couteaux suisses numériques, à l’aise dans le web, les réseaux sociaux et la création graphique.</p>
                 <div class="image">
-                    <img src="https://pixabay.com/get/g888e981634b137cd8e6ef68d7292b6911bc8366dea15c01eeaa5b0ec3f1d08150b7601fc0066323af1d108eb74686966_1280.jpg" alt="">
+                    <img src="~/assets/equipe.jpg" alt="">
                 </div>
                 <h3>Notre équipe</h3>
                 <p>De part la varité de compétences qui la compose, notre équipe est très versatible et à la fois complémentaire. Tristan, designer, va concevoir vos projets et passera la main à Benjamin qui leur fera prendre vie. </p>

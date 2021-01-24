@@ -15,7 +15,7 @@
             }
         },
         "slug" : "pourquoi-eviter-les-CMS-opensource-pour-votre-site-internet",
-        "urlImage" : "https://pixabay.com/get/g6b1247f21bc41ad48abb21e3fd467dfb433166357749d5f7b823e03cd98082c1f1656306a771345c61f12279ec3fb523_1280.jpg",
+        "urlImage" : "/wp.jpg",
         "auteur" : "benjamingeets"
     },
     {
@@ -37,7 +37,7 @@
             }
         },
         "slug" : "developpeur-de-site-internet-a-Tournai",
-        "urlImage" : "https://pixabay.com/get/g41df9e78c2ed8509d5d3959aac51becdba4c1be99af239fbc167a922ffbad6d12e63be2a18445d51bf863c6d9a7bd739_1280.jpg",
+        "urlImage" : "/code.jpg",
         "auteur" : "benjamingeets"
     },
     {
@@ -73,7 +73,7 @@
             }
         },
         "slug" : "UX-vs-UI",
-        "urlImage" : "https://pixabay.com/get/g3b96957f344742499bd18145e92f0d666dcb240bbe7a7942104736e4947e9c9128b4f96326cee20deb0e2f34da9a171b_1280.jpg",
+        "urlImage" : "/ux.jpg",
         "auteur" : "galandtristan"
     }
 ]
