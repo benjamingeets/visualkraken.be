@@ -23,13 +23,13 @@
                             <h4>Développeur</h4>
                             <p>Etudiant de 21 ans, il a commencé à s’intéresser au web dès son plus jeune age lui permettant  d’être le plus à jour possible.</p>
                             <div class="social">
-                                <a href="">
+                                <a href="https://twitter.com/benjamingeets">
                                     <img src="~/assets/twitter.png" alt="">
                                 </a>
-                                <a href="">
+                                <a href="https://instagram.com/benjamingeets">
                                     <img src="~/assets/instagram.png" alt="">
                                 </a>
-                                <a href="">
+                                <a href="https://linkedin.com/in/benjamingeets">
                                     <img src="~/assets/linkedin.png" alt="">
                                 </a>
                             </div>
@@ -45,13 +45,13 @@
                             <h4>Designer</h4>
                             <p>Etudiant de 22 ans, il dispose d’une vision des choses et d’une maitrise de l’expérience utilisateur afin de fournir des utilisations toujours plus plaisantes.</p>
                             <div class="social">
-                                <a href="">
+                                <a href="https://twitter.com/galandtristan">
                                     <img src="~/assets/twitter.png" alt="">
                                 </a>
-                                <a href="">
+                                <a href="https://instagram.com/galandtristan">
                                     <img src="~/assets/instagram.png" alt="">
                                 </a>
-                                <a href="">
+                                <a href="https://linkedin.com/in/galandtristan">
                                     <img src="~/assets/linkedin.png" alt="">
                                 </a>
                             </div>

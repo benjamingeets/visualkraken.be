@@ -11,6 +11,7 @@
                             <li v-for="el in texte.liste" :key='el'><p>➡️ {{el}}</p></li>
                         </ul>
                     </div>
+                    <p id="auteur"><a :href='"https://" + auteur + ".be"'>Article rédigé par @{{auteur}}</a></p>
                     <div class="liens">
                         <router-link to="/">
                             <div class="button button-gradient" @click="goTop()">
@@ -54,7 +55,11 @@
 </template>
 
 <style lang="scss">
-
+#auteur{
+    color:black;
+    margin-top:20px;
+    font-size:1em;
+}
 nav{
     ul{
         li{
@@ -173,6 +178,7 @@ export default {
             soustitre:"soustitre",
             article:"article",
             urlImage:"",
+            auteur:"",
             reco: [
                 {
                 titre : "...",
@@ -199,6 +205,7 @@ export default {
                 this.soustitre = element.soustitre
                 this.article = element.article
                 this.urlImage = element.urlImage
+                this.auteur = element.auteur
             }
         });
 

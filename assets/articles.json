@@ -15,7 +15,8 @@
             }
         },
         "slug" : "pourquoi-eviter-les-CMS-opensource-pour-votre-site-internet",
-        "urlImage" : "https://via.placeholder.com/1920x1080"
+        "urlImage" : "https://via.placeholder.com/1920x1080",
+        "auteur" : "benjamingeets"
     },
     {
         "titre" : "Développeur de site internet à Tournai",
@@ -36,7 +37,8 @@
             }
         },
         "slug" : "developpeur-de-site-internet-a-Tournai",
-        "urlImage" : "https://via.placeholder.com/1920x1080"
+        "urlImage" : "https://via.placeholder.com/1920x1080",
+        "auteur" : "benjamingeets"
     },
     {
         "titre" : "UI 🆚 UX",
@@ -55,11 +57,11 @@
                 "contenu":"L'UX et L'UI deviennent primordiale pour le design d'un support numérique car si l'utilisateur a des facilités à utiliser le site web, il n'en sera que plus satisfait et reviendra plus facilement. Si ce n’est pas le cas, l’utilisateur peut être plus réticent à utiliser le site web. "
             },
             "p4":{
-                "contenu" : "Tout cela parait anodin mais afin de proposer aux clients potentielle le meilleur service cette démarche est nécessaire. "
+                "contenu" : "Tout cela parait anodin mais afin de proposer aux clients potentiels le meilleur service cette démarche est nécessaire. "
             },
             "p5":{
                 "titre" : "Processus",
-                "contenu": "Afin d’élabore la meilleur interface il y a plusieurs étapes importante. ",
+                "contenu": "Afin d’élabore la meilleur interface il y a plusieurs étapes importantes. ",
                 "liste":{
                     "1":"Elaboration des personas",
                     "2":"Analyse de leurs besoins",
@@ -72,6 +74,7 @@
             }
         },
         "slug" : "UX-vs-UI",
-        "urlImage" : "https://via.placeholder.com/1920x1080"
+        "urlImage" : "https://via.placeholder.com/1920x1080",
+        "auteur" : "galandtristan"
     }
 ]
