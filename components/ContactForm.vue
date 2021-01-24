@@ -2,18 +2,18 @@
     <form method="POST" name="contact-vk" action="/contact" data-netlify="true">
             <div id="nommail">
                 <div id="nom">
-                    <label for="nom">Nom</label><input name="nom" type="text" v-model="nom" v-on:input='verifier("nom")' required>
+                    <label for="nom">Nom</label><input name="nom" type="text" v-model="nom" v-on:input='verifier("nom")'>
                 </div>
                 <div id="mail">
-                    <label for="mail">Adresse email</label><input v-model="mail" name="mail" type="mail" v-on:input='verifier("mail")' required>
+                    <label for="mail">Adresse email</label><input v-model="mail" name="mail" type="mail" v-on:input='verifier("mail")'>
                 </div>
             </div>
             <div id="objet">
-                <label for="objet">Objet</label><input v-model="objet" name="objet" type="text" v-on:input='verifier("objet")' required>
+                <label for="objet">Objet</label><input v-model="objet" name="objet" type="text" v-on:input='verifier("objet")'>
             </div>
             <div id="message">
                 <label for="message">Message</label>
-                <textarea v-model="message" name="message" id="" cols="30" rows="10" v-on:input='verifier("message")' required></textarea>
+                <textarea v-model="message" name="message" id="" cols="30" rows="10" v-on:input='verifier("message")'></textarea>
             </div>
             <div class="button button-gradient">
                 <input class="" name="submit" type="submit" value="Envoyer" >
