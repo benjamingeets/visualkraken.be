@@ -1,5 +1,5 @@
 <template>
-    <form method="POST" name="contact-vk" data-netlify="true">
+    <form method="POST" name="contact-vk" action="/contact" data-netlify="true">
             <div id="nommail">
                 <div id="nom">
                     <label for="nom">Nom</label><input name="nom" type="text" v-model="nom" v-on:input='verifier("nom")' required>
@@ -17,9 +17,6 @@
             </div>
             <div v-if="displayButton" class="button button-gradient">
                 <input class="" type="submit" value="Envoyer" >
-            </div>
-            <div v-if="!displayButton" class="button button-false">
-                <p>Veuillez compléter les champs</p>
             </div>
         </form>
 </template>
