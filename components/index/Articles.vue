@@ -4,14 +4,14 @@
         <div>
             <div class="articleUn" @click="goTop()">
                 <NuxtLink :to='"/blog/" + reco[0].slug'>
-                    <img :src='"~/assets/" + reco[0].urlImage + ".jpg"' alt="" loading="lazy">
+                    <img :src='"~/assets/miniatures/" + reco[0].urlImage + ".jpg"' alt="" loading="lazy">
                     <h3>{{reco[0].titre}} </h3>
                     <p>{{reco[0].soustitre}}</p>
                 </NuxtLink>
             </div>
             <div class="articleDeux">
                 <NuxtLink :to='"/blog/" + reco[1].slug'>
-                    <img :src='"~/assets/" + reco[1].urlImage +".jpg"' alt="" loading="lazy" @click="goTop()">
+                    <img :src='"~/assets/miniatures/" + reco[1].urlImage +".jpg"' alt="" loading="lazy" @click="goTop()">
                     <h3 @click="goTop()">{{reco[1].titre}}</h3>
                     <p @click="goTop()">{{reco[1].soustitre}}</p>
                 </NuxtLink>
