@@ -5,8 +5,7 @@
                 <div class="texte">
                   <img :src='urlImage' alt="">
                     <h3>{{soustitre}}</h3>
-                    <p>{{texte}}
-                    </p>
+                    <p v-for="pagagraphe in texte" style="margin-top:10px;">{{pagagraphe}}</p>
                     <div class="liens">
                         <router-link to="/">
                             <div class="button button-gradient" @click="goTop()">

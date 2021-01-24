@@ -1,23 +1,34 @@
 [
     {
-        "titre" : "titre1",
-        "soustitre" : "soustitre1",
-        "texte" : "blabla",
-        "slug" : "article-un",
+        "titre" : "Pourquoi éviter les CMS OpenSource pour votre site internet",
+        "soustitre" : "Même s'ils sont souvent moins chers",
+        "texte" : {
+            "p1":"Si vous cherchez à vous faire réaliser un site internet, il est probable que votre interlocuteur vous parle de « CMS opensource », derrière ce terme faussement technique se cache WordPress. ",
+            "p2":"WordPress n’est pas un mal en soit, c’est un Content Management System. Un « logiciel » qui va vous permettre de gérer le contenu de votre site. Mais bien souvent, il est utilisé car, avec certains ajouts, il permet de concevoir des sites internets sans coder. Cela ayant l’avantage de demander moins de compétences. Mais le revers de la médaille, c’est que votre site internet est, de par les limitations de ce genre de procédés, moins personnalisable, plus lents, plus cher à maintenir sur Internet,…",
+            "p3":"Chez VisualKraken, nous n’utilisons pas ces technologies pour des sites dits « vitrines » (dont le contenu n’a pas à être modifié). Tous les produits sortant de nos ateliers ont été scrupuleusement codés à la main avec l’attention que cela requiert. Se faisant, nos sites sont plus rapides et favorisés par Google. Cela nous permet aussi de gérer la moindre couleur, le moindre pixel de ce qui est affiché. "
+        },
+        "slug" : "pourquoi-eviter-les-CMS-opensource-pour-votre-site-internet",
         "urlImage" : "https://via.placeholder.com/1920x1080"
     },
     {
-        "titre" : "titre2",
-        "soustitre" : "soustitre2",
-        "texte" : "blabla",
-        "slug" : "article-deux",
+        "titre" : "Développeur de site internet à Tournai",
+        "soustitre" : "Qui sommes-nous? Pourquoi nous faire confiance?",
+        "texte" : {
+            "p1": "Il n’est pas toujours aisé de trouver des acteurs du monde numérique en Belgique dès que l’on sort de Bruxelles. Mais si vous êtes dans la région de Tournai dans le Hainaut, vous pouvez faire appelle à VisualKraken.",
+            "p2":"Nous sommes une équipe de 2 étudiants en e-Business (Froyennes) qui avons lancé notre Start-Up il y a maintenant un an. Notre passion pour le numérique et nos études combinées nous permettent de fournir des services et sites internet toujours plus proche de votre demande et toujours plus performant. ",
+            "p3":"Nous utilisons des technologies comme VueJS, NodeJS, du HTML, CSS, NuxtJS afin d’optimiser votre SEO (référencement sur Google),… pour la partie web et si vos besoins sont liés à l’image, notre designer est comme un poisson dans l’eau sur la suite Adobe (Illustrator, Photoshop ainsi que Figma pour l’UX Design).",
+            "p4":"Si vous souhaitez nous accorder votre confiance, n’hésitez pas à nous contacter ! "
+        },
+        "slug" : "developpeur-de-site-internet-a-Tournai",
         "urlImage" : "https://via.placeholder.com/1920x1080"
     },
     {
-        "titre" : "titre3",
-        "soustitre" : "soustitre3",
-        "texte" : "blabla",
-        "slug" : "article-trois",
+        "titre" : "L'importance de l'UX Design",
+        "soustitre" : "Votre utilisateur au centre de votre produit",
+        "texte" : {
+            "p1":"[Work In Progress]"
+        },
+        "slug" : "importance-de-l-ux-design",
         "urlImage" : "https://via.placeholder.com/1920x1080"
     }
 ]
