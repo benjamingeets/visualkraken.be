@@ -9,7 +9,7 @@
                 Responsive
                 </h3>
                 <p>
-                    Un site web conçu pour téléphone, tablette et ordinateur
+                    Un site web conçu pour téléphone, tablette et ordinateur.
                 </p>
             </div>
         </div>
@@ -19,7 +19,7 @@
                 Sur mesure
                 </h3>
                 <p>
-                    Nous n’utilisons aucun outil superflu, tout est codé à la main selon vos attentes
+                    Nous n’utilisons aucun outil superflu, tout est codé à la main selon vos attentes.
                 </p>
             </div>
         </div>

@@ -1,14 +1,14 @@
 [
     {
         "titre" : "Pourquoi éviter les CMS OpenSource pour votre site internet",
-        "soustitre" : "Même s'ils sont souvent moins chers",
+        "soustitre" : "Même s'ils semblent plus faciles",
         "article" : {
             "p1":{
-                "titre" : "Même s'ils sont souvent moins chers",
+                "titre" : "Même s'ils sembles plus faciles",
                 "contenu" : "Si vous cherchez à vous faire réaliser un site internet, il est probable que votre interlocuteur vous parle de « CMS opensource », derrière ce terme faussement technique se cache WordPress. "
             },
             "p2":{
-                "contenu" :"WordPress n’est pas un mal en soit, c’est un Content Management System. Un « logiciel » qui va vous permettre de gérer le contenu de votre site. Mais bien souvent, il est utilisé car, avec certains ajouts, il permet de concevoir des sites internets sans coder. Cela ayant l’avantage de demander moins de compétences. Mais le revers de la médaille, c’est que votre site internet est, de par les limitations de ce genre de procédés, moins personnalisable, plus lents, plus cher à maintenir sur Internet,…"
+                "contenu" :"WordPress n’est pas un mal en soit, c’est un Content Management System. Un « logiciel » qui va vous permettre de gérer le contenu de votre site. Mais bien souvent, il est utilisé car, avec certains ajouts, il permet de concevoir des sites internets sans coder. Cela ayant l’avantage de demander moins de compétences. Mais le revers de la médaille, c’est que votre site internet est, de par les limitations de ce genre de procédés, moins personnalisable, plus lents, plus cher à maintenir en ligne,…"
             },
             "p3":{
                 "contenu":"Chez VisualKraken, nous n’utilisons pas ces technologies pour des sites dits « vitrines » (dont le contenu n’a pas à être modifié). Tous les produits sortant de nos ateliers ont été scrupuleusement codés à la main avec l’attention que cela requiert. Se faisant, nos sites sont plus rapides et favorisés par Google. Cela nous permet aussi de gérer la moindre couleur, le moindre pixel de ce qui est affiché. "
@@ -46,30 +46,29 @@
         "article" : {
             "p1":{
                 "titre":"Quels sont les différences ? ",
-                "contenu":"L'UX représente le parcours que va suivre l'utilisateur. Acronyme anglaise de User eXpérience, l’UX design l’expérience utilisateur. C’est avant tout le design d’interface, l’interface dans laquelle l’utilisateur sera plongé."
+                "contenu":"L'UX représente le parcours que va suivre l'utilisateur lors de son parcours d'achat.C'est l'acronyme anglais de User eXpérience (expérience utilisateur). Avant d'être l'interface avec laquelle va intéragir l'utilisatuer, c'est la conception même de son chemin afin de le guider au mieux."
             },
             "p2":{
-                "contenu":"L'UI design est, en réalité, une branche de l'UX. Elle a comme but l'esthétique du support. User Interface, en anglais, signifie donc l'interface utilisateur. Tout ce que verra l'utilisateur lorsqu'il est sur le site ou l'application."
+                "contenu":"L'UI design est une branche de l'UX. Elle a comme but l'esthétique et la fonctionnalité du support. User Interface, en anglais, signifie donc l'interface utilisateur. C'est tout ce avec quoi l'utilisateur va intéragir lorsqu'il sera sur un site ou une application."
             }
             ,
             "p3":{
-                "titre":"Pourquoi utiliser ce service ? ",
-                "contenu":"L'UX et L'UI deviennent primordiale pour le design d'un support numérique car si l'utilisateur a des facilités à utiliser le site web, il n'en sera que plus satisfait et reviendra plus facilement. Si ce n’est pas le cas, l’utilisateur peut être plus réticent à utiliser le site web. "
+                "titre":"Pourquoi prévoir l'UX et l'UI ? ",
+                "contenu":"L'UX et L'UI deviennent primordiale pour le design d'un support numérique car c'est un facteur clé qui va déterminer si un prospect achète un vêtement sur votre boutique e-Commerce ou s'il s'arrête après avoir ajouté un tee-shirt dans son panier car l'interface n'est pas assez intuitive pour lui. Si la navigation n'est pas naturelle, elle demande un effort et chaque effort est un risque de faire partir l'utilisateur."
             },
             "p4":{
-                "contenu" : "Tout cela parait anodin mais afin de proposer aux clients potentiels le meilleur service cette démarche est nécessaire. "
+                "contenu" : "Tout cela parait anodin mais afin de proposer aux clients potentiels le meilleur service cette démarche est indispensable. "
             },
             "p5":{
                 "titre" : "Processus",
-                "contenu": "Afin d’élabore la meilleur interface il y a plusieurs étapes importantes. ",
+                "contenu": "Pour prévoir comment créer le parcours de l'utilisateur, il y a plusieurs étapes par lesquelles passer : ",
                 "liste":{
-                    "1":"Elaboration des personas",
-                    "2":"Analyse de leurs besoins",
-                    "3":"Elaboration d'une maquette papier",
-                    "4":"Prototypage de la maquette",
-                    "5": "Test de la maquette auprès des personas",
-                    "6":"Rectification des problèmes survenus",
-                    "7":"Développement"
+                    "1":"Prévoir qui seront nos clients",
+                    "2":"Analyser leurs besoins",
+                    "4":"Concevoir une maquette",
+                    "5": "Tester notre maquette auprès de personnes suceptibles d'utiliser notre interface",
+                    "6":"Corriger les problèmes éventuels",
+                    "7":"Lancer le développement"
                 }
             }
         },
