@@ -4,7 +4,7 @@
             <div class="articles_container">
                 <div v-for='article in articles' :key="article.titre" class="article" @click="goTop()">
                     <router-link :to='"/blog/" + article.slug'>
-                        <img :src='"~/assets/miniatures" + article.urlImage + ".jpg"' alt="" loading="lazy">
+                        <img :src='"~/assets/miniatures/" + article.urlImage + ".jpg"' alt="" loading="lazy">
                     <h3>
                         {{article.titre}}
                     </h3>
