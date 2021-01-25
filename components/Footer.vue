@@ -35,7 +35,7 @@
 
         <div class="bottom">
             <div class="copyright">
-                2020, tous droits réservés
+                2021, tous droits réservés
             </div>
             <div class="social">
                 <a href="https://facebook.com/visualkrakenbe">
