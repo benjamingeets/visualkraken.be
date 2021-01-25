@@ -1,5 +1,5 @@
 <template>
-    <form name="contactus" action="?envoie=true" method="POST"  netlify netlify-honeypot="bot-field">
+    <form name="contactus" method="POST"  netlify netlify-honeypot="bot-field">
      <input type="hidden" name="form-name" value="contactus" />
             <div id="nommail">
                 <div id="nom">

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/service/graphisme", {data:[{}],fetch:[],mutations:[]});
