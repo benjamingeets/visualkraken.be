@@ -21,7 +21,7 @@
                 </div>
                 <h3>Benjamin Geets</h3>
                 <h4>Développeur</h4>
-                <p>Etudiant de 21 ans, il a commencé à s’intéresser au web dès son plus jeune age lui permettant  d’être le plus à jour possible</p>
+                <p>Etudiant de 21 ans, il a commencé à s’intéresser au web dès son plus jeune âge lui permettant  d’être le plus à jour possible</p>
                 <div class="social">
                     <a href="https://twitter.com/benjamingeets">
                         <img src="~/assets/twitter.png" alt="">
