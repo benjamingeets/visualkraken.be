@@ -23,7 +23,7 @@
             </div>
             <div class="text">
                 <h3 class="tablette-center">Développement  de site web</h3>
-                <p>Nous mettons un point d’honneur à concevoir des sites internet à la main, en accord avec vos valeurs et axés sur la légerté et la rapidité.</p>
+                <p>Nous mettons un point d’honneur à concevoir des sites internet à la main, en accord avec vos valeurs et axés sur la légèreté et la rapidité.</p>
                 <router-link to="/service/dev">
                     <div class="button tablette-center button-white">
                         <p>En savoir plus</p>
