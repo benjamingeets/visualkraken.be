@@ -11,7 +11,7 @@
                     <img src="~/assets/equipe.jpg" alt="">
                 </div>
                 <h3>Notre équipe</h3>
-                <p>De part la varité de compétences qui la compose, notre équipe est très versatible et à la fois complémentaire. Tristan, designer, va concevoir vos projets et passera la main à Benjamin qui leur fera prendre vie. </p>
+                <p>De part la varéité de compétences qui la compose, notre équipe est très versatile et à la fois complémentaire. Tristan, designer, va concevoir vos projets et passera la main à Benjamin qui leur fera prendre vie. </p>
                 <div class="equipe">
                     <div class="card">
                         <div class="photo">
