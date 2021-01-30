@@ -12,7 +12,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: ''},
+      { hid: 'description', name: 'description', content: "VisualKraken est une agence web dans la région de Tournai. Nous pouvons réaliser des sites internets, applications web, logo, gestion de réseaux sociaux, illusrations,..."},
       { property:'og:site_name', content:'VisualKraken'},
       { property: 'og:title', content:"VisualKraken - Votre site, au pixel près sur Tournai"},
       { property:'og:url',content:'https://visualkraken.be'},
