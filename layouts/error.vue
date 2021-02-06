@@ -1,5 +1,5 @@
 <template>
-    <div>404
+    <div>404 oui
         
     </div>
 </template>
