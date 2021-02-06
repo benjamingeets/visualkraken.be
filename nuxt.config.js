@@ -4,6 +4,9 @@ export default {
   loading:{
     height:"0px"
   },
+  generate: {
+    fallback: true
+  },
   head: {
     title: 'VisualKraken - Votre site, au pixel près sur Tournai',
     htmlAttrs: {
