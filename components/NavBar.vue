@@ -15,7 +15,7 @@
         <div class="hamburger" @click="hmbMenu()">
             <img src="~/assets/hamburger.png" alt="">
         </div>
-        <div v-if="displayHmb" class="hamburger-menu" @click="hmbMenu()">
+        <div class="hamburger-menu" style="margin-left:-100vw" @click="hmbMenu()">
             <div class="close">
                 <img src="~/assets/cross.png" alt="">
             </div>
@@ -37,10 +37,6 @@ $transition : 0.3s ease-in-out;
 
 .stop-scroll{
     overflow: hidden;
-}
-
-.hamburger-menu{
-    display: none;
 }
 
 nav{
@@ -140,16 +136,18 @@ nav{
             }
         }
         .hamburger-menu{
+            overflow: hidden;
             display:flex;
             flex-direction: column;
             justify-content: center;
             height: 100vh;
             width: 100vw;
             position: absolute;
+            margin-left:-100vw;
             background: linear-gradient(197.4deg, #2463AA 0%, #5AC2D8 100.71%);
             top:0px;
             left:0px;
-            transition: 0s;
+            transition: all 350ms ease-in-out;
             img{
                 width: 150px;
                 margin: 0 auto 50px auto;
@@ -159,6 +157,7 @@ nav{
                 width: 40px;
                 top:70px;
                 right: 60px;
+                cursor: pointer;
                 img{
                     width: 100%;
                 }
@@ -208,23 +207,18 @@ nav{
 <script>
 export default {
     name:"NavBar",
-    data(){
-        return{
-            displayHmb :false
-        }
-    },
     methods:{
         hmbMenu(){
-            if(this.displayHmb){
-                this.displayHmb = !this.displayHmb
-                document.querySelector("body").style.overflow="auto"
-                document.querySelector(".fleche").style.display="block"
-            }
-            else{
-                this.displayHmb = !this.displayHmb
-                
+            if(document.querySelector(".hamburger-menu").style.marginLeft=="-100vw"){
+                //Si le menu est à gauche, le met au centre, bloque le scroll et crache la flèche
+                document.querySelector(".hamburger-menu").style.marginLeft="0"
                 document.querySelector("body").style.overflow="hidden"
                 document.querySelector(".fleche").style.display="none"
+            }
+            else{
+                document.querySelector("body").style.overflow="auto"
+                document.querySelector(".fleche").style.display="block"
+                document.querySelector(".hamburger-menu").style.marginLeft="-100vw"
                 window.scroll(0,-10000)
             }
         }
