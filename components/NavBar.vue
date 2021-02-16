@@ -39,6 +39,10 @@ $transition : 0.3s ease-in-out;
     overflow: hidden;
 }
 
+.hamburger-menu{
+    display: none;
+}
+
 nav{
     height: 15vh;
     display: flex;
@@ -142,7 +146,7 @@ nav{
             justify-content: center;
             height: 100vh;
             width: 100vw;
-            position: absolute;
+            position: fixed;
             margin-left:-100vw;
             background: linear-gradient(197.4deg, #2463AA 0%, #5AC2D8 100.71%);
             top:0px;
