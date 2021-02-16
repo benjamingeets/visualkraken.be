@@ -147,7 +147,7 @@ nav{
             background: linear-gradient(197.4deg, #2463AA 0%, #5AC2D8 100.71%);
             top:0px;
             left:0px;
-            transition: all 350ms ease-in-out;
+            transition: all 200ms ease-in-out;
             img{
                 width: 150px;
                 margin: 0 auto 50px auto;
