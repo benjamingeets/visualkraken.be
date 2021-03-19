@@ -1,7 +1,7 @@
 <template>
     <div class="services">
         <h2 class="text-center section-title">Nos services</h2>
-        <!-- Communication -->
+        <!-- Communication
         <div id="communication" class="service-card">
             <div class="image">
                 <img src="~/assets/communication.svg" alt="" loading="lazy">
@@ -15,7 +15,7 @@
                     </div>
                 </router-link>
             </div>
-        </div>
+        </div> -->
         <!-- Dev web -->
         <div id="dev" class="service-card reverse">
             <div class="image">
