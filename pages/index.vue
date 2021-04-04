@@ -4,7 +4,7 @@
     <Services/>
     <Avantages/>
     <Processus/>
-    <Articles/>
+    <Articles :blog_posts='blog_posts'/>
     <Equipe/>
   </div>
 </template>
@@ -19,6 +19,11 @@ export default {
     if(location.hash){
       document.querySelector(location.hash).scrollIntoView()
     }
+  },  
+  async asyncData({ $content }) {
+    let blog_posts;
+    blog_posts = await $content("blog").sortBy('date').limit(2).fetch();
+    return { blog_posts };
   },
   head(){
     return{
