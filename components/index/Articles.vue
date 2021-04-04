@@ -75,7 +75,7 @@ export default {
         }
         h3 {
           margin-right: 10px;
-          margin: 20px 0;
+          margin: 10px 0;
         }
       }
     }

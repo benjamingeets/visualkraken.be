@@ -73,8 +73,6 @@
 </style>
 
 <script>
-import data from "~/assets/articles.json";
-
 export default {
   name: "Blog",
   data() {
