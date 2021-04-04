@@ -21,13 +21,10 @@
                 </div>
                 <h3>Benjamin Geets</h3>
                 <h4>Développeur</h4>
-                <p>Etudiant de 21 ans, il a commencé à s’intéresser au web dès son plus jeune âge lui permettant  d’être le plus à jour possible</p>
+                <p>Etudiant de 22 ans, il a commencé à s’intéresser au web dès son plus jeune âge lui permettant  d’être le plus à jour possible</p>
                 <div class="social">
                     <a href="https://twitter.com/benjamingeets">
                         <img src="~/assets/twitter.png" alt="">
-                    </a>
-                    <a href="https://instagram.com/benjamingeets">
-                        <img src="~/assets/instagram.png" alt="">
                     </a>
                     <a href="https://linkedin.com/in/benjamingeets">
                         <img src="~/assets/linkedin.png" alt="">
@@ -40,7 +37,7 @@
                 </div>
                 <h3>Tristan Galand</h3>
                 <h4>Designer</h4>
-                <p>Etudiant de 22 ans, il dispose d’une vision des choses et d’une maitrise de l’expérience utilisateur afin de fournir des utilisations toujours plus plaisantes.</p>
+                <p>Etudiant de 23 ans, il dispose d’une vision des choses et d’une maitrise de l’expérience utilisateur afin de fournir des utilisations toujours plus plaisantes.</p>
                 <div class="social">
                     <a href="https://twitter.com/galandtristan">
                         <img src="~/assets/twitter.png" alt="">
