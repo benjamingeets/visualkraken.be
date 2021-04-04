@@ -81,8 +81,7 @@ nav {
     h3{
         margin-bottom:0;
     }
-    .nuxt-content-container{
-      position: unset;
+
         .nuxt-content{
             p{
                 margin-top:20px;
@@ -97,7 +96,7 @@ nav {
               }
             }
         }
-    }
+    
     img {
       border-radius: 1em;
       width: 100%;
