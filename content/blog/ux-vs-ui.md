@@ -1,6 +1,6 @@
 ---
 titre: UX vs UI
-soustitre: Quels sont les différences ? 
+soustitre: Quelles sont les différences ? 
 miniature: ux.jpg
 auteur: {
     nom: Galand Tristan,
