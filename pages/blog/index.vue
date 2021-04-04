@@ -75,11 +75,6 @@
 <script>
 export default {
   name: "Blog",
-  data() {
-    return {
-      articles: data,
-    };
-  },
   components: {},
   methods: {
     goTop() {

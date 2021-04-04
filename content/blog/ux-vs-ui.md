@@ -8,7 +8,7 @@ auteur: {
 }
 date: 2020-10-02
 ---
-L'UX représente le parcours que va suivre l'utilisateur lors de son parcours d'achat.C'est l'acronyme anglais de User eXpérience (expérience utilisateur). Avant d'être l'interface avec laquelle va intéragir l'utilisatuer, c'est la conception même de son chemin afin de le guider au mieux.
+L'UX représente le parcours que va suivre l'utilisateur lors de son parcours d'achat. C'est l'acronyme anglais de User eXpérience (expérience utilisateur). Avant d'être l'interface avec laquelle va intéragir l'utilisatuer, c'est la conception même de son chemin afin de le guider au mieux.
 
 L'UI design est une branche de l'UX. Elle a comme but l'esthétique et la fonctionnalité du support. User Interface, en anglais, signifie donc l'interface utilisateur. C'est tout ce avec quoi l'utilisateur va intéragir lorsqu'il sera sur un site ou une application.
 
