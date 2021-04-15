@@ -1,6 +1,5 @@
 <template>
-    <form name="contactus" action="/contact" method="POST"  netlify netlify-honeypot="bot-field">
-     <input type="hidden" name="form-name" value="contactus" />
+    <form name="contactus" action="/contact" method="POST" >
             <div id="nommail">
                 <div id="nom">
                     <label for="nom">Nom</label><input name="nom" type="text" v-model="nom" v-on:input='verifier("nom")' required>
@@ -16,8 +15,8 @@
                 <label for="message">Message</label>
                 <textarea v-model="message" name="message" id="" cols="30" rows="10" v-on:input='verifier("message")' required></textarea>
             </div>
-            <div v-if="displayButton" class="button button-gradient">
-                <input class="" type="submit" value="Envoyer" >
+            <div v-if="displayButton" class="button button-gradient" >
+                <input class="" type="submit" value="Envoyer" disabled>
             </div>
             <div v-if="!displayButton" class="button button-false">
                 <p>Veuillez compléter les champs</p>
